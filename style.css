@@ -1,17 +1,23 @@
-body{
-    font-family: 'Karla', sans-serif;
+body {
+    font-family: "Karla", sans-serif;
     margin: 0;
     padding: 0.75rem;
+    background: url('images/bg.png');
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 .profile {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 .profile_stats_container {
-    display: inline-block;
+    
 }
 
 .profile_week {
@@ -20,10 +26,12 @@ body{
 }
 
 .profile_img {
+    min-width: 50px;
     width: 100px;
     border-radius: 50%;
     display: inline-block;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .profile_stats {
@@ -32,7 +40,8 @@ body{
     vertical-align: top;
 }
 
-.profile_stats_hp, .profile_stats_mp {
+.profile_stats_hp,
+.profile_stats_mp {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,28 +49,22 @@ body{
 
 .profile--bar {
     display: inline-block;
-}
-
-.profile_stats_hp .profile--bar,
-.profile_stats_mp .profile--bar,
-.profile_goals .profile--bar {
     height: 0.75rem;
     width: 3rem;
     margin-left: 0.2rem;
 }
 
-.profile_stats_hp .profile--bar {
+.profile--bar.type--hp {
     background-color: red;
 }
 
-.profile_stats_mp .profile--bar {
+.profile--bar.type--mp {
     background-color: blue;
 }
 
 .profile_goals {
     display: inline-block;
     vertical-align: top;
-
 }
 
 .profile_goals .profile--bar {
@@ -96,11 +99,11 @@ body{
     color: white;
     margin-right: 0.2rem;
     border-radius: 5px;
-
+    overflow: hidden;
 }
 
 .activity_action_item.item_jap {
-    background-image: url('images/jap.png');
+    background-image: url("images/jap.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
@@ -111,6 +114,7 @@ body{
     grid-column: 1/3;
     border: solid 1px grey;
     display: flex;
+    background-color: white;
 }
 
 .activity_action_item.type--work .activity_action_item--title {

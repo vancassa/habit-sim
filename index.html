@@ -10,36 +10,39 @@
         <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" /> -->
     </head>
     <body>
-        <header class="profile">
-            <img class="profile_img" src="images/profile_pic.jpg" alt="Profile picture" />
-            <div class="profile_stats_container">
-                <h1 class="profile_week">Week 1</h1>
-                <div class="profile_stats">
-                    <div class="profile_stats_hp">
-                        <span>HP: </span>
-                        <div class="profile--bar"></div>
+        <header>
+            <div class="profile">
+                <img class="profile_img" src="images/profile_pic.jpg" alt="Profile picture" />
+                <div class="profile_stats_container">
+                    <div class="profile_stats">
+                        <div class="profile_stats_hp">
+                            <span>HP: </span>
+                            <div class="profile--bar type--hp"></div>
+                        </div>
+                        <div class="profile_stats_mp">
+                            <span>MP: </span>
+                            <div class="profile--bar type--mp"></div>
+                        </div>
                     </div>
-                    <div class="profile_stats_mp">
-                        <span>MP: </span>
-                        <div class="profile--bar"></div>
-                    </div>
-                </div>
-
-                <div class="profile_goals">
-                    <div class="profile_goals_jap">
-                        <span>Japanese: </span>
-                        <div class="profile--bar"></div>
-                    </div>
-                    <div class="profile_goals_fitness">
-                        <span>Fitness: </span>
-                        <div class="profile--bar"></div>
-                    </div>
-                    <div class="profile_goals_work">
-                        <span>Work: </span>
-                        <div class="profile--bar"></div>
+    
+                    <div class="profile_goals">
+                        <div class="profile_goals_jap">
+                            <span>Japanese: </span>
+                            <div class="profile--bar"></div>
+                        </div>
+                        <div class="profile_goals_fitness">
+                            <span>Fitness: </span>
+                            <div class="profile--bar"></div>
+                        </div>
+                        <div class="profile_goals_work">
+                            <span>Work: </span>
+                            <div class="profile--bar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <h1 class="profile_week">Week 1</h1>
+
         </header>
         <main class="activity">
             <div class="activity_day"><span class="activity--title">Mon</span></div>
