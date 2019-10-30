@@ -21,7 +21,7 @@
               // Create action item card
               const action = document.createElement('div');
               action.classList.add('activity_action_item');
-              action.classList.add(`type--${typeId}`);
+              action.style.backgroundImage = `url("images/${typeId}.jpg")`
               const actionTitle = document.createElement('span');
               actionTitle.classList.add('activity_action_item--title');
               actionTitle.innerText = title;

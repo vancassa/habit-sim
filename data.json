@@ -5,18 +5,18 @@
     "endDate": "27-10-2019",
     "monday": { "typeId": "work", "title": "Work", "desc": "Learn JS" },
     "tuesday": { "typeId": "rest", "title": "Rest", "desc": "Watch TV" },
-    "wednesday": { "typeId": "work", "title": "Work", "desc": "Working on a side project" },
+    "wednesday": { "typeId": "work", "title": "Work", "desc": "Do side project" },
     "thursday": { "typeId": "social", "title": "Social", "desc": "Cell group" },
     "friday": { "typeId": "jap", "title": "Jap", "desc": "Japanese class" },
     "saturday": [
-      { "typeId": "jap", "title": "Jap", "desc": "Sat1" },
-      { "typeId": "jap", "title": "Jap", "desc": "Sat2" },
-      { "typeId": "jap", "title": "Jap", "desc": "Sat3" }
+      { "typeId": "read", "title": "Read", "desc": "Designing for Emotion" },
+      { "typeId": "read", "title": "Read", "desc": "Designing for Emotion" },
+      { "typeId": "social", "title": "Social", "desc": "Play with friends" }
     ],
     "sunday": [
-      { "typeId": "jap", "title": "Jap", "desc": "Sun1" },
-      { "typeId": "jap", "title": "Jap", "desc": "Sun2" },
-      { "typeId": "jap", "title": "Jap", "desc": "Sun3" }
+      { "typeId": "jap", "title": "Jap", "desc": "Do homework" },
+      { "typeId": "work", "title": "Work", "desc": "Do side project" },
+      { "typeId": "work", "title": "Work", "desc": "Do side project" }
     ],
     "activities": [
       { "typeId": "jap", "title": "Jap", "text": "Monday" },
