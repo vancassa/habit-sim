@@ -1,0 +1,24 @@
+[
+    {
+        "week": "1",
+        "startDate": "20-10-2019",
+        "endDate": "27-10-2019",
+        "activities": [
+            [{ "typeId": "jap", "title": "Jap", "text": "Monday" }],
+            [{ "typeId": "jap", "title": "Jap", "text": "Tuesday" }],
+            [{ "typeId": "jap", "title": "Jap", "text": "Wed" }],
+            [{ "typeId": "jap", "title": "Jap", "text": "Th" }],
+            [{ "typeId": "jap", "title": "Jap", "text": "Fr" }],
+            [
+                { "typeId": "jap", "title": "Jap", "text": "Sat1" },
+                { "typeId": "jap", "title": "Jap", "text": "Sat2" },
+                { "typeId": "jap", "title": "Jap", "text": "Sat3" }
+            ],
+            [
+                { "typeId": "jap", "title": "Jap", "text": "Sun1" },
+                { "typeId": "jap", "title": "Jap", "text": "Sun2" },
+                { "typeId": "jap", "title": "Jap", "text": "Sun3" }
+            ]
+        ]
+    }
+]
