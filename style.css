@@ -7,6 +7,7 @@ body {
 
 header {
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .profile {
@@ -14,15 +15,18 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    padding-top: 3rem;
 }
 
-.profile_stats_container {
-    
-}
-
-.profile_week {
+.week {
     margin-top: 0;
     font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .profile_img {
@@ -50,8 +54,16 @@ header {
 .profile--bar {
     display: inline-block;
     height: 0.75rem;
-    width: 3rem;
+    width: 5rem;
     margin-left: 0.2rem;
+}
+
+.profile--bar span {
+    display: block;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .profile--bar.type--hp {
@@ -84,6 +96,10 @@ header {
     grid-template-columns: 0.5fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
+}
+
+.activity--title {
+    background-color: azure;
 }
 
 .activity_action {
@@ -151,14 +167,17 @@ header {
         display: inline-flex;
         flex-direction: row;
         margin-bottom: 0;
+        padding-top: 0;
     }
 
-    .profile_week {
+    .week {
         display: inline-block;
         font-size: 4rem;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 0;
+        position: initial;
+        width: auto;
     }
 
     .profile--bar {
