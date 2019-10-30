@@ -120,39 +120,54 @@ main {
     margin-right: 0.2rem;
     border-radius: 5px;
     overflow: hidden;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.activity_action_item.item_jap {
-    background-image: url("images/jap.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: lighten;
-    background-color: green;
+}
+
+.activity_action_item.type--jap {
+    background-image: url("images/japan.jpg");
 }
 
 .activity_action_item.type--work {
-    grid-column: 1/3;
-    border: solid 1px grey;
-    display: flex;
-    background-color: white;
+    background-image: url("images/work.jpg");
 }
 
-.activity_action_item.type--work .activity_action_item--title {
+.activity_action_item.type--social {
+    background-image: url("images/social.jpg");
+}
+
+.activity_action_item.type--rest {
+    background-image: url("images/rest.jpg");
+}
+
+.activity_action_item.type--constant {
+    grid-column: 1/3;
+    border: solid 1px rgb(200, 200, 200);
+    display: flex;
+    background-color: rgb(250, 255, 255);
+}
+
+.activity_action_item.type--constant .activity_action_item--title {
     margin: auto;
     background: none;
     color: black;
     text-shadow: none;
+    font-weight: bold;
 }
 
 .activity_action_item--title {
     font-size: 1.5rem;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: -2px -2px 2px rgb(80, 80, 80), 2px -2px 2px rgb(80, 80, 80), -2px 2px 2px rgb(80, 80, 80), 2px 2px 2px rgb(80, 80, 80);
+    font-weight: bold;
 }
 
 .activity_action_item--desc {
     font-size: 0.75rem;
-    line-height: 0.45rem;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: -2px -2px 2px rgb(80, 80, 80), 2px -2px 2px rgb(80, 80, 80), -2px 2px 2px rgb(80, 80, 80), 2px 2px 2px rgb(80, 80, 80);
 }
 
 footer {
@@ -235,10 +250,9 @@ footer {
         margin-bottom: 0.2rem;
     }
 
-    .activity_action_item.type--work {
+    .activity_action_item.type--constant {
         grid-column: auto;
         grid-row: 1/3;
-        border: solid 1px grey;
         height: auto;
     }
 }

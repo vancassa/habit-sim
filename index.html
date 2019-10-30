@@ -1,166 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Habit Sim</title>
-        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Habit Sim</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <img
+          class="profile_img"
+          src="images/profile_pic.jpg"
+          alt="Profile picture"
         />
-    </head>
-    <body>
-        <header>
-            <div class="profile">
-                <img class="profile_img" src="images/profile_pic.jpg" alt="Profile picture" />
-                <div class="profile_stats_container">
-                    <div class="profile_stats">
-                        <div class="profile_stats_hp">
-                            <span>HP: </span>
-                            <div class="profile--bar type--hp"><span>10/10</span></div>
-                        </div>
-                        <div class="profile_stats_mp">
-                            <span>MP: </span>
-                            <div class="profile--bar type--mp"><span>10/10</span></div>
-                        </div>
-                    </div>
+        <div class="profile_stats_container">
+          <div class="profile_stats">
+            <div class="profile_stats_hp">
+              <span>HP: </span>
+              <div class="profile--bar type--hp"><span>10/10</span></div>
+            </div>
+            <div class="profile_stats_mp">
+              <span>MP: </span>
+              <div class="profile--bar type--mp"><span>10/10</span></div>
+            </div>
+          </div>
 
-                    <div class="profile_goals">
-                        <div class="profile_goals_jap">
-                            <span>Japanese: </span>
-                            <div class="profile--bar"></div>
-                        </div>
-                        <div class="profile_goals_fitness">
-                            <span>Fitness: </span>
-                            <div class="profile--bar"></div>
-                        </div>
-                        <div class="profile_goals_work">
-                            <span>Work: </span>
-                            <div class="profile--bar"></div>
-                        </div>
-                    </div>
-                </div>
+          <div class="profile_goals">
+            <div class="profile_goals_jap">
+              <span>Japanese: </span>
+              <div class="profile--bar"></div>
             </div>
-            <h1 class="week">Week 1</h1>
-        </header>
-        <main class="activity">
-            <div class="activity_day"><span class="activity--title">Mon</span></div>
-            <div class="activity_action weekday">
-                <div class="activity_action_item type--work">
-                    <span class="activity_action_item--title">Work</span>
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
+            <div class="profile_goals_fitness">
+              <span>Fitness: </span>
+              <div class="profile--bar"></div>
             </div>
-            <div class="activity_day"><span class="activity--title">Tue</span></div>
-            <div class="activity_action weekday">
-                <div class="activity_action_item type--work">
-                    <span class="activity_action_item--title">Work</span>
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
+            <div class="profile_goals_work">
+              <span>Work: </span>
+              <div class="profile--bar"></div>
             </div>
-            <div class="activity_day"><span class="activity--title">Wed</span></div>
-            <div class="activity_action weekday">
-                <div class="activity_action_item type--work">
-                    <span class="activity_action_item--title">Work</span>
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-            </div>
-            <div class="activity_day"><span class="activity--title">Thu</span></div>
-            <div class="activity_action weekday">
-                <div class="activity_action_item type--work">
-                    <span class="activity_action_item--title">Work</span>
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-            </div>
-            <div class="activity_day"><span class="activity--title">Fri</span></div>
-            <div class="activity_action weekday">
-                <div class="activity_action_item type--work">
-                    <span class="activity_action_item--title">Work</span>
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-            </div>
-            <div class="activity_day"><span class="activity--title">Sat</span></div>
-            <div class="activity_action">
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="week">Week 1</h1>
+    </header>
+    <main class="activity">
+      <div class="activity_day"><span class="activity--title">Mon</span></div>
+      <div id="monday" class="activity_action">
+        <div class="activity_action_item type--constant">
+          <span class="activity_action_item--title">Work</span>
+        </div>
+      </div>
+      <div class="activity_day"><span class="activity--title">Tue</span></div>
+      <div id="tuesday" class="activity_action">
+        <div class="activity_action_item type--constant">
+          <span class="activity_action_item--title">Work</span>
+        </div>
+      </div>
+      <div class="activity_day"><span class="activity--title">Wed</span></div>
+      <div id="wednesday" class="activity_action">
+        <div class="activity_action_item type--constant">
+          <span class="activity_action_item--title">Work</span>
+        </div>
+      </div>
+      <div class="activity_day"><span class="activity--title">Thu</span></div>
+      <div id="thursday" class="activity_action">
+        <div class="activity_action_item type--constant">
+          <span class="activity_action_item--title">Work</span>
+        </div>
+      </div>
+      <div class="activity_day"><span class="activity--title">Fri</span></div>
+      <div id="friday" class="activity_action">
+        <div class="activity_action_item type--constant">
+          <span class="activity_action_item--title">Work</span>
+        </div>
+      </div>
+      <div class="activity_day"><span class="activity--title">Sat</span></div>
+      <div id="saturday" class="activity_action"></div>
 
-            <div class="activity_day"><span class="activity--title">Sun</span></div>
-            <div class="activity_action">
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-                <div class="activity_action_item item_jap">
-                    <span class="activity_action_item--title">Jap</span><br /><span
-                        class="activity_action_item--desc"
-                        >Vocab practice 400</span
-                    >
-                </div>
-            </div>
-        </main>
+      <div class="activity_day"><span class="activity--title">Sun</span></div>
+      <div id="sunday" class="activity_action"></div>
+    </main>
 
-        <footer>
-            <div class="footer-nav type--prev">
-                <i class="fa fa-arrow-left"></i><span>Previous</span>
-            </div>
-            <div class="footer-nav type--next">
-                <span>Next</span><i class="fa fa-arrow-right"></i>
-            </div>
-        </footer>
+    <footer>
+      <div class="footer-nav type--prev">
+        <i class="fa fa-arrow-left"></i><span>Previous</span>
+      </div>
+      <div class="footer-nav type--next">
+        <span>Next</span><i class="fa fa-arrow-right"></i>
+      </div>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
