@@ -21,7 +21,7 @@ header {
 }
 
 .profile_week {
-    margin-top: 0;  
+    margin-top: 0;
     font-size: 2rem;
 }
 
@@ -133,4 +133,72 @@ header {
     font-size: 0.75rem;
     line-height: 0.45rem;
     text-shadow: 2px 2px 2px grey;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 3rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .profile {
+        display: inline-flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .profile_week {
+        display: inline-block;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .profile--bar {
+        height: 1rem;
+        width: 7rem;
+        margin-left: 0.2rem;
+    }
+
+    .activity {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        /* grid-auto-flow: column; */
+        align-items: center;
+    }
+
+    .activity_day {
+        text-align: center;
+        font-weight: bold;
+        /* text-decoration: underline; */
+    }
+
+    .activity_action {
+        grid-column: auto;
+        grid-row: 2/5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: 0.5rem;
+    }
+
+    .activity_action_item {
+        height: 100px;
+        margin-bottom: 0.2rem;
+    }
+
+    .activity_action_item.type--work {
+        grid-column: auto;
+        grid-row: 1/3;
+        border: solid 1px grey;
+        height: auto;
+    }
 }
