@@ -1,0 +1,132 @@
+body{
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0.75rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile_stats_container {
+    display: inline-block;
+}
+
+.profile_week {
+    margin-top: 0;  
+    font-size: 2rem;
+}
+
+.profile_img {
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.profile_stats {
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: top;
+}
+
+.profile_stats_hp, .profile_stats_mp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile--bar {
+    display: inline-block;
+}
+
+.profile_stats_hp .profile--bar,
+.profile_stats_mp .profile--bar,
+.profile_goals .profile--bar {
+    height: 0.75rem;
+    width: 3rem;
+    margin-left: 0.2rem;
+}
+
+.profile_stats_hp .profile--bar {
+    background-color: red;
+}
+
+.profile_stats_mp .profile--bar {
+    background-color: blue;
+}
+
+.profile_goals {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.profile_goals .profile--bar {
+    background-color: green;
+}
+
+.profile_goals_jap,
+.profile_goals_fitness,
+.profile_goals_work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+.activity_action {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0.5rem;
+}
+
+.activity_action_item {
+    height: 70px;
+    text-align: center;
+    color: white;
+    margin-right: 0.2rem;
+    border-radius: 5px;
+
+}
+
+.activity_action_item.item_jap {
+    background-image: url('images/jap.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-color: green;
+}
+
+.activity_action_item.type--work {
+    grid-column: 1/3;
+    border: solid 1px grey;
+    display: flex;
+}
+
+.activity_action_item.type--work .activity_action_item--title {
+    margin: auto;
+    background: none;
+    color: black;
+    text-shadow: none;
+}
+
+.activity_action_item--title {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.activity_action_item--desc {
+    font-size: 0.75rem;
+    line-height: 0.45rem;
+    text-shadow: 2px 2px 2px grey;
+}
