@@ -1,22 +1,13 @@
 (function() {
     var habit = {
         $week: document.querySelector(".week"),
+        allData: [],
         start: function() {
             habit.loadData(function(data) {
                 const currentWeekData = habit.getCurrentWeekData(data);
-
-                let showPrevBtn = true, showNextBtn = true;
-                if (currentWeekData.week === data[0].week) {
-                    showPrevBtn = false;
-                    showNextBtn = true;
-                }
-                else if (currentWeekData.week === data[data.length-1].week) {
-                    showPrevBtn = true;
-                    showNextBtn = false;
-                }
                     
-
-                habit.render(currentWeekData, showPrevBtn, showNextBtn);
+                habit.allData = data;
+                habit.render(currentWeekData);
             });
         },
         loadData: function(fn) {
@@ -39,7 +30,32 @@
 
             return currentWeekData;
         },
-        render: function(weekData, showPrevBtn, showNextBtn) {
+        render: function(weekData) {
+            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
+                $nextBtn = document.querySelector(".footer-nav.type--next");
+
+            $prevBtn.removeEventListener('mousedown', function() {
+                const prevData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week - 1));
+                if (prevData.length > 0) habit.render(prevData[0]);
+            });
+
+            $nextBtn.removeEventListener('mouseDown', function() {
+                console.log('next');
+                const nextData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week + 1));
+                console.log('weekData :', weekData);
+                if (nextData.length > 0) habit.render(nextData[0]);
+            });
+
+            let showPrevBtn = true, showNextBtn = true;
+            if (weekData.week === habit.allData[0].week) {
+                showPrevBtn = false;
+                showNextBtn = true;
+            }
+            else if (weekData.week === habit.allData[habit.allData.length-1].week) {
+                showPrevBtn = true;
+                showNextBtn = false;
+            }
+
             habit.$week.innerText = `Week ${weekData.week}`;
 
             function createActionEl({ typeId, title, desc }) {
@@ -72,11 +88,23 @@
             });
 
             // Hide Prev / Next button
-            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
-                $nextBtn = document.querySelector(".footer-nav.type--next");
+            
                 
             $prevBtn.style.display = showPrevBtn ? 'block' : 'none';
             $nextBtn.style.display = showNextBtn ? 'block' : 'none';
+
+            // Add event listener
+            $prevBtn.addEventListener('mousedown', function() {
+                const prevData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week - 1));
+                if (prevData.length > 0) habit.render(prevData[0]);
+            });
+
+            $nextBtn.addEventListener('mousedown', function() {
+                console.log('next');
+                const nextData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week + 1));
+                console.log('weekData :', weekData);
+                if (nextData.length > 0) habit.render(nextData[0]);
+            });
         }
     };
 
