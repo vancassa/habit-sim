@@ -1,54 +1,49 @@
-(function(){
+(function() {
     var habit = {
-        $week: document.querySelector('.week'),
-        start: function(){
+        $week: document.querySelector(".week"),
+        start: function() {
             habit.loadData(function(data) {
                 habit.render(data);
             });
         },
-        loadData: function(fn){
+        loadData: function(fn) {
             fetch("data.json")
                 .then(res => res.json())
                 .then(response => fn(response));
         },
-        render: function(data){
-            console.log('data2 :', data);
+        render: function(data) {
+            console.log("data2 :", data);
             habit.$week.innerText = `Week ${data[0].week}`;
 
             const weekData = data[0];
 
-            function createActionEl({typeId, title, desc}) {
-              // Create action item card
-              const action = document.createElement('div');
-              action.classList.add('activity_action_item');
-              action.style.backgroundImage = `url("images/${typeId}.jpg")`
-              const actionTitle = document.createElement('span');
-              actionTitle.classList.add('activity_action_item--title');
-              actionTitle.innerText = title;
-              const actionDesc = document.createElement('span');
-              actionDesc.classList.add('activity_action_item--desc');
-              actionDesc.innerText = desc;
+            function createActionEl({ typeId, title, desc }) {
+                // Create action item card
+                const action = document.createElement("div");
+                action.classList.add("activity_action_item");
+                action.style.backgroundImage = `url("images/${typeId}.jpg")`;
+                const actionTitle = document.createElement("span");
+                actionTitle.classList.add("activity_action_item--title");
+                actionTitle.innerText = title;
+                const actionDesc = document.createElement("span");
+                actionDesc.classList.add("activity_action_item--desc");
+                actionDesc.innerText = desc;
 
-              action.appendChild(actionTitle);
-              action.appendChild(actionDesc);
+                action.appendChild(actionTitle);
+                action.appendChild(actionDesc);
 
-              return action;
+                return action;
             }
-            
-            const actions = document.querySelectorAll('.activity_action');
-            console.log('actions :', actions);
-            actions.forEach(($el, index) => {
-              console.log('$el.id :', $el.id);
-              if ($el.id === 'saturday' || $el.id === 'sunday') {
-                weekData[$el.id].forEach(d => {
-                  $el.appendChild(createActionEl(d));
-                })
-              }
-              else {
-                $el.appendChild(createActionEl(weekData[$el.id]))
-              }
-            })
 
+            document.querySelectorAll(".activity_action").forEach($el => {
+                if ($el.id === "saturday" || $el.id === "sunday") {
+                    weekData[$el.id].forEach(d => {
+                        $el.appendChild(createActionEl(d));
+                    });
+                } else {
+                    $el.appendChild(createActionEl(weekData[$el.id]));
+                }
+            });
         }
     };
 
