@@ -23,7 +23,7 @@
     "week": "2",
     "startDate": "2019-10-28",
     "endDate": "2019-11-3",
-    "monday": { "typeId": "work", "title": "Work", "desc": "" },
+    "monday": { "typeId": "social", "title": "Social", "desc": "" },
     "tuesday": { "typeId": "rest", "title": "Rest", "desc": "" },
     "wednesday": { "typeId": "work", "title": "Work", "desc": "" },
     "thursday": { "typeId": "social", "title": "Social", "desc": "" },

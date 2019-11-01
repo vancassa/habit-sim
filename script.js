@@ -2,12 +2,14 @@
     var habit = {
         $week: document.querySelector(".week"),
         allData: [],
+        currentData: {},
         start: function() {
             habit.loadData(function(data) {
-                const currentWeekData = habit.getCurrentWeekData(data);
-                    
                 habit.allData = data;
-                habit.render(currentWeekData);
+                habit.currentData = habit.getCurrentWeekData(data);
+
+                habit.eventListeners();
+                habit.render(habit.currentData);
             });
         },
         loadData: function(fn) {
@@ -26,36 +28,12 @@
                 if (today > startDate && today < endDate) {
                     currentWeekData = d;
                 }
-            })
+            });
 
             return currentWeekData;
         },
         render: function(weekData) {
-            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
-                $nextBtn = document.querySelector(".footer-nav.type--next");
-
-            $prevBtn.removeEventListener('mousedown', function() {
-                const prevData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week - 1));
-                if (prevData.length > 0) habit.render(prevData[0]);
-            });
-
-            $nextBtn.removeEventListener('mouseDown', function() {
-                console.log('next');
-                const nextData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week + 1));
-                console.log('weekData :', weekData);
-                if (nextData.length > 0) habit.render(nextData[0]);
-            });
-
-            let showPrevBtn = true, showNextBtn = true;
-            if (weekData.week === habit.allData[0].week) {
-                showPrevBtn = false;
-                showNextBtn = true;
-            }
-            else if (weekData.week === habit.allData[habit.allData.length-1].week) {
-                showPrevBtn = true;
-                showNextBtn = false;
-            }
-
+            habit.renderNav(weekData.week);
             habit.$week.innerText = `Week ${weekData.week}`;
 
             function createActionEl({ typeId, title, desc }) {
@@ -78,6 +56,12 @@
 
             // Render activities
             document.querySelectorAll(".activity_action").forEach($el => {
+                // Remove existing children
+                while ($el.firstChild) {
+                    $el.removeChild($el.firstChild);
+                }
+
+                // Add new children
                 if ($el.id === "saturday" || $el.id === "sunday") {
                     weekData[$el.id].forEach(d => {
                         $el.appendChild(createActionEl(d));
@@ -86,24 +70,43 @@
                     $el.appendChild(createActionEl(weekData[$el.id]));
                 }
             });
+        },
+        renderNav: function(week) {
+            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
+                $nextBtn = document.querySelector(".footer-nav.type--next");
 
-            // Hide Prev / Next button
+            let showPrevBtn = true, showNextBtn = true;
             
-                
-            $prevBtn.style.display = showPrevBtn ? 'block' : 'none';
-            $nextBtn.style.display = showNextBtn ? 'block' : 'none';
+            if (week === habit.allData[0].week) {
+                showPrevBtn = false;
+                showNextBtn = true;
+            } else if (week === habit.allData[habit.allData.length - 1].week) {
+                showPrevBtn = true;
+                showNextBtn = false;
+            }
 
-            // Add event listener
-            $prevBtn.addEventListener('mousedown', function() {
-                const prevData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week - 1));
-                if (prevData.length > 0) habit.render(prevData[0]);
+            $prevBtn.style.visibility = showPrevBtn ? "visible" : "hidden";
+            $nextBtn.style.visibility = showNextBtn ? "visible" : "hidden";
+        },
+        eventListeners: function() {
+            // Prev / Next button event listeners
+            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
+                $nextBtn = document.querySelector(".footer-nav.type--next");
+
+            $prevBtn.addEventListener("mousedown", function() {
+                const prevData = data.filter(d => parseInt(d.week) === parseInt(habit.currentData.week - 1));
+                if (prevData.length > 0) {
+                    habit.currentData = prevData[0];
+                    habit.render(habit.currentData);
+                }
             });
 
-            $nextBtn.addEventListener('mousedown', function() {
-                console.log('next');
-                const nextData = habit.allData.filter(d => parseInt(d.week) === parseInt(weekData.week + 1));
-                console.log('weekData :', weekData);
-                if (nextData.length > 0) habit.render(nextData[0]);
+            $nextBtn.addEventListener("mousedown", function() {
+                const nextData = data.filter(d => parseInt(d.week) === parseInt(habit.currentData.week) + 1);
+                if (nextData.length > 0) {
+                    habit.currentData = nextData[0];
+                    habit.render(habit.currentData);
+                }
             });
         }
     };
