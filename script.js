@@ -115,25 +115,37 @@
             $nextBtn.style.visibility = showNextBtn ? "visible" : "hidden";
         },
         eventListeners: function() {
-            // Prev / Next button event listeners
-            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
-                $nextBtn = document.querySelector(".footer-nav.type--next");
 
-            $prevBtn.addEventListener("mousedown", function() {
+            function goPrevPage() {
                 const prevData = habit.allData.filter(d => parseInt(d.week) === parseInt(habit.currentData.week - 1));
                 if (prevData.length > 0) {
                     habit.currentData = prevData[0];
                     habit.render(habit.currentData);
                 }
-            });
+            }
 
-            $nextBtn.addEventListener("mousedown", function() {
+            function goNextPage() {
                 const nextData = habit.allData.filter(d => parseInt(d.week) === parseInt(habit.currentData.week) + 1);
                 if (nextData.length > 0) {
                     habit.currentData = nextData[0];
                     habit.render(habit.currentData);
                 }
-            });
+            }
+
+
+            // Prev / Next button event listeners
+            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
+                $nextBtn = document.querySelector(".footer-nav.type--next");
+
+            $prevBtn.addEventListener("mousedown", goPrevPage);
+
+            $nextBtn.addEventListener("mousedown", goNextPage);
+
+            // Arrow key left & right
+            window.addEventListener('keydown', function(e) {
+                if      (e.key === 'ArrowLeft')     goPrevPage();
+                else if (e.key === 'ArrowRight')    goNextPage();
+            })
         }
     };
 
