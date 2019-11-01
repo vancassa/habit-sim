@@ -54,6 +54,17 @@
                 return action;
             }
 
+            function createConstantEl() {
+                const constantAction = document.createElement('div');
+                constantAction.className = 'activity_action_item type--constant';
+                const constantActionTitle = document.createElement('span');
+                constantActionTitle.classList.add('activity_action_item--title');
+                constantActionTitle.innerText = 'Work';
+                constantAction.appendChild(constantActionTitle);
+
+                return constantAction;
+            }
+
             // Render activities
             document.querySelectorAll(".activity_action").forEach($el => {
                 // Remove existing children
@@ -67,6 +78,7 @@
                         $el.appendChild(createActionEl(d));
                     });
                 } else {
+                    $el.appendChild(createConstantEl());
                     $el.appendChild(createActionEl(weekData[$el.id]));
                 }
             });
