@@ -1,6 +1,7 @@
 (function() {
     var habit = {
         $week: document.querySelector(".week"),
+        $date: document.querySelector(".date"),
         $prevBtn: document.querySelector(".footer-nav.type--prev"),
         $nextBtn: document.querySelector(".footer-nav.type--next"),
         allData: [],
@@ -39,15 +40,9 @@
 
             habit.renderNav(weekData.week);
             habit.$week.innerText = `Week ${weekData.week}`;
-
-            const startDate = new Date(weekData.startDate),
-                endDate = new Date(weekData.endDate);
-
-            const startDateMonth = startDate.toLocaleString('default', { month: 'long' }).slice(0, 3),
-                endDateMonth = endDate.toLocaleString('default', { month: 'long' }).slice(0, 3);
-
-            document.querySelector('.date').innerText = `${startDate.getDate()} ${startDateMonth} - ${endDate.getDate()} ${endDateMonth}`
-
+            habit.renderDate(weekData);
+            habit.renderProgressBars(weekData);
+            
             function createActionEl({ typeId, title, desc }) {
                 // Create action item card
                 const action = document.createElement("div");
@@ -106,6 +101,18 @@
             document.querySelector('.profile--bar.type--jap span').innerText = goalsJap === 0 ? '' : `+ ${goalsJap}`;
             document.querySelector('.profile--bar.type--fitness span').innerText = goalsFitness === 0 ? '' : `+ ${goalsFitness}`;
             document.querySelector('.profile--bar.type--work span').innerText = goalsJS === 0 ? '': `+ ${goalsJS}`;
+        },
+        renderDate: function(weekData) {
+            const startDate = new Date(weekData.startDate),
+                endDate = new Date(weekData.endDate);
+
+            const startDateMonth = startDate.toLocaleString('default', { month: 'long' }).slice(0, 3),
+                endDateMonth = endDate.toLocaleString('default', { month: 'long' }).slice(0, 3);
+
+            habit.$date.innerText = `${startDate.getDate()} ${startDateMonth} - ${endDate.getDate()} ${endDateMonth}`
+        },
+        renderProgressBars: function(weekData) {
+            
         },
         renderNav: function(week) {
             let showPrevBtn = true, showNextBtn = true;
