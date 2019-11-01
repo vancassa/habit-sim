@@ -1,98 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Habit Sim</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="profile">
-        <img
-          class="profile_img"
-          src="images/profile_pic.jpg"
-          alt="Profile picture"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Habit Sim</title>
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <div class="profile_stats_container">
-          <div class="profile_stats">
-              <span>HP: </span>
-              <div class="profile--bar type--hp"><span>8/10</span></div>
-              <span>MP: </span>
-              <div class="profile--bar type--mp"><span>5/10</span></div>
-          </div>
+    </head>
+    <body>
+        <header>
+            <div class="profile">
+                <img class="profile_img" src="images/profile_pic.jpg" alt="Profile picture" />
+                <div class="profile_stats_container">
+                    <div class="profile_stats">
+                        <span>HP: </span>
+                        <div class="profile--bar type--hp"><span>8/10</span></div>
+                        <span>MP: </span>
+                        <div class="profile--bar type--mp"><span>5/10</span></div>
+                    </div>
 
-          <div class="profile_goals">
-            <span>Japanese:</span>
-            <div class="profile--bar type--jap"><span></span></div>
-            <span>Fitness:</span>
-            <div class="profile--bar type--fitness"><span></span></div>
-            <span>JS skill:</span>
-            <div class="profile--bar type--work"><span></span></div>
-          </div>
-        </div>
-      </div>
-      <div class="week-date">
-          <h1 class="week">Week 1</h1>
-          <span class="date"></span>
-      </div>
-    </header>
-    <main class="activity">
-      <div class="activity_day"><span class="activity--title">Mon</span></div>
-      <div id="monday" class="activity_action">
-        <div class="activity_action_item type--constant">
-          <span class="activity_action_item--title">Work</span>
-        </div>
-      </div>
-      <div class="activity_day"><span class="activity--title">Tue</span></div>
-      <div id="tuesday" class="activity_action">
-        <div class="activity_action_item type--constant">
-          <span class="activity_action_item--title">Work</span>
-        </div>
-      </div>
-      <div class="activity_day"><span class="activity--title">Wed</span></div>
-      <div id="wednesday" class="activity_action">
-        <div class="activity_action_item type--constant">
-          <span class="activity_action_item--title">Work</span>
-        </div>
-      </div>
-      <div class="activity_day"><span class="activity--title">Thu</span></div>
-      <div id="thursday" class="activity_action">
-        <div class="activity_action_item type--constant">
-          <span class="activity_action_item--title">Work</span>
-        </div>
-      </div>
-      <div class="activity_day"><span class="activity--title">Fri</span></div>
-      <div id="friday" class="activity_action">
-        <div class="activity_action_item type--constant">
-          <span class="activity_action_item--title">Work</span>
-        </div>
-      </div>
-      <div class="activity_day"><span class="activity--title">Sat</span></div>
-      <div id="saturday" class="activity_action"></div>
+                    <div class="profile_goals">
+                        <span>Japanese:</span>
+                        <div class="profile--bar type--jap"><span></span></div>
+                        <span>Fitness:</span>
+                        <div class="profile--bar type--fitness"><span></span></div>
+                        <span>JS skill:</span>
+                        <div class="profile--bar type--work"><span></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-date">
+                <h1 class="week">Week 1</h1>
+                <span class="date"></span>
+            </div>
+        </header>
+        <main class="activity">
+            <div class="activity_day"><span class="activity--title">Mon</span></div>
+            <div id="monday" class="activity_action"></div>
+            <div class="activity_day"><span class="activity--title">Tue</span></div>
+            <div id="tuesday" class="activity_action"></div>
+            <div class="activity_day"><span class="activity--title">Wed</span></div>
+            <div id="wednesday" class="activity_action"></div>
+            <div class="activity_day"><span class="activity--title">Thu</span></div>
+            <div id="thursday" class="activity_action"></div>
+            <div class="activity_day"><span class="activity--title">Fri</span></div>
+            <div id="friday" class="activity_action"></div>
+            <div class="activity_day"><span class="activity--title">Sat</span></div>
+            <div id="saturday" class="activity_action"></div>
 
-      <div class="activity_day"><span class="activity--title">Sun</span></div>
-      <div id="sunday" class="activity_action"></div>
-    </main>
+            <div class="activity_day"><span class="activity--title">Sun</span></div>
+            <div id="sunday" class="activity_action"></div>
+        </main>
 
-    <footer>
-      <div class="footer-nav type--prev">
-        <i class="fa fa-arrow-left"></i><span>Previous</span>
-      </div>
-      <div class="footer-nav type--next">
-        <span>Next</span><i class="fa fa-arrow-right"></i>
-      </div>
-    </footer>
+        <footer>
+            <div class="footer-nav type--prev">
+                <i class="fa fa-arrow-left"></i><span>Previous</span>
+            </div>
+            <div class="footer-nav type--next">
+                <span>Next</span><i class="fa fa-arrow-right"></i>
+            </div>
+        </footer>
 
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>
