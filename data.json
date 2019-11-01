@@ -10,7 +10,7 @@
       "thursday": { "typeId": "social", "title": "Social", "desc": "" },
       "friday": { "typeId": "rest", "title": "rest", "desc": "" },
       "saturday": [
-        { "typeId": "rest", "title": "Rest", "desc": "" },
+        { "typeId": "jap", "title": "日本語", "desc": "" },
         { "typeId": "read", "title": "Read", "desc": "" },
         { "typeId": "social", "title": "Social", "desc": "" }
       ],

@@ -2,6 +2,7 @@ body {
     font-family: "Karla", sans-serif;
     margin: 0;
     padding: 0.75rem;
+    padding-top: 0.5rem;
     background: url('images/bg.png');
 }
 
@@ -11,7 +12,7 @@ header {
 }
 
 main {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .profile {
@@ -27,7 +28,7 @@ main {
 
 .week {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     display: block;
     width: 100%;
@@ -45,7 +46,7 @@ main {
     border-radius: 50%;
     display: inline-block;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .profile_stats {
@@ -139,11 +140,11 @@ main {
     grid-column: 2/5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .activity_action_item {
-    height: 70px;
+    height: 60px;
     text-align: center;
     color: white;
     margin-right: 0.2rem;
@@ -215,6 +216,10 @@ footer {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2rem;
+    }
+
+    main {
+        margin-bottom: 1rem;
     }
 
     .profile {
