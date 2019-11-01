@@ -86,14 +86,14 @@
 
                 // Add new children
                 if ($el.id === "saturday" || $el.id === "sunday") {
-                    weekData[$el.id].forEach(d => {
+                    weekData.activities[$el.id].forEach(d => {
                         $el.appendChild(createActionEl(d));
                         if (d.typeId === 'jap') goalsJap++;
                         else if (d.typeId === 'fitness') goalsFitness++;
                         else if (d.typeId === 'js') goalsJS++;
                     });
                 } else {
-                    let d = weekData[$el.id];
+                    let d = weekData.activities[$el.id];
                     $el.appendChild(createConstantEl());
                     $el.appendChild(createActionEl(d));
                     if (d.typeId === 'jap') goalsJap++;
