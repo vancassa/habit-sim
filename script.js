@@ -101,7 +101,7 @@
             // Render goals indicator
             document.querySelector('.profile--bar.type--jap span').innerText = goalsJap === 0 ? '' : `+ ${goalsJap}`;
             document.querySelector('.profile--bar.type--fitness span').innerText = goalsFitness === 0 ? '' : `+ ${goalsFitness}`;
-            document.querySelector('.profile--bar.type--work span').innerText = goalsJS === 0 ? '': `+ ${goalsJS}`;
+            document.querySelector('.profile--bar.type--js span').innerText = goalsJS === 0 ? '': `+ ${goalsJS}`;
         },
         renderDate: function(weekData) {
             const startDate = new Date(weekData.startDate),
@@ -138,7 +138,7 @@
 
             const $progressJap = document.querySelector('.profile--bar.type--jap');
             const $progressFitness = document.querySelector('.profile--bar.type--fitness');
-            const $progressJS = document.querySelector('.profile--bar.type--work');
+            const $progressJS = document.querySelector('.profile--bar.type--js');
 
             $progressJap.style.width = `${(totalJap)/habit.PROGRESS_CONSTANT}rem`;
             $progressFitness.style.width = `${(totalFitness)/habit.PROGRESS_CONSTANT}rem`;
