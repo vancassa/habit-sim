@@ -56,19 +56,18 @@ main {
     margin-right: 0.5rem;
 }
 
-.profile_stats_hp,
-.profile_stats_mp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .profile--bar {
     position: relative;
     display: inline-block;
     height: 0.75rem;
     width: 4rem;
     margin-left: 0.2rem;
+}
+
+.profile_stats .profile--bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile_stats .profile--bar span {
