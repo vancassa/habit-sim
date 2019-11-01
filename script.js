@@ -7,6 +7,7 @@
         $nextBtn: document.querySelector(".footer-nav.type--next"),
         allData: [],
         currentData: {},
+        startTouchX: 0,
         start: function() {
             habit.loadData(function(data) {
                 habit.allData = data;
@@ -186,6 +187,17 @@
             window.addEventListener('keydown', function(e) {
                 if      (e.key === 'ArrowLeft')     goPrevPage();
                 else if (e.key === 'ArrowRight')    goNextPage();
+            })
+
+            // Gesture swipe left and right
+            window.addEventListener('touchstart', function(e) {
+                habit.startTouchX = e.changedTouches[0].clientX;
+            })
+
+            window.addEventListener('touchend', function(e) {
+                const changedX = e.changedTouches[0].clientX - habit.startTouchX;
+                if      (changedX > 75)  goNextPage();
+                else if (changedX < -75) goPrevPage();
             })
         }
     };
