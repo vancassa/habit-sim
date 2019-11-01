@@ -94,7 +94,7 @@
                 $nextBtn = document.querySelector(".footer-nav.type--next");
 
             $prevBtn.addEventListener("mousedown", function() {
-                const prevData = data.filter(d => parseInt(d.week) === parseInt(habit.currentData.week - 1));
+                const prevData = habit.allData.filter(d => parseInt(d.week) === parseInt(habit.currentData.week - 1));
                 if (prevData.length > 0) {
                     habit.currentData = prevData[0];
                     habit.render(habit.currentData);
@@ -102,7 +102,7 @@
             });
 
             $nextBtn.addEventListener("mousedown", function() {
-                const nextData = data.filter(d => parseInt(d.week) === parseInt(habit.currentData.week) + 1);
+                const nextData = habit.allData.filter(d => parseInt(d.week) === parseInt(habit.currentData.week) + 1);
                 if (nextData.length > 0) {
                     habit.currentData = nextData[0];
                     habit.render(habit.currentData);

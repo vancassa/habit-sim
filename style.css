@@ -43,9 +43,11 @@ main {
 }
 
 .profile_stats {
-    display: inline-block;
+    display: inline-grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
     margin-right: 0.5rem;
-    vertical-align: top;
 }
 
 .profile_stats_hp,
@@ -56,13 +58,14 @@ main {
 }
 
 .profile--bar {
+    position: relative;
     display: inline-block;
     height: 0.75rem;
     width: 4rem;
     margin-left: 0.2rem;
 }
 
-.profile--bar span {
+.profile_stats .profile--bar span {
     display: block;
     color: white;
     font-size: 0.6rem;
@@ -70,21 +73,54 @@ main {
     text-align: center;
 }
 
+.profile_goals .profile--bar span {
+    /* display:  */
+    color: green;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: right;
+    text-align: center;
+    position: absolute;
+    right: -1rem;
+    top: 0;
+}
+
 .profile--bar.type--hp {
     background-color: red;
+    width: 3.2rem;
 }
 
 .profile--bar.type--mp {
     background-color: blue;
+    width: 2rem;
 }
 
 .profile_goals {
-    display: inline-block;
-    vertical-align: top;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .profile_goals .profile--bar {
     background-color: green;
+}
+
+.profile_goals_list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile--bar.type--jap {
+    width: 2rem;
+}
+
+.profile--bar.type--fitness {
+    width: 1rem;
+}
+
+.profile--bar.type--work {
+    width: 1.2rem;
 }
 
 .profile_goals_jap,

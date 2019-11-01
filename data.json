@@ -3,18 +3,18 @@
     "week": "1",
     "startDate": "2019-10-20",
     "endDate": "2019-10-27",
-    "monday": { "typeId": "js", "title": "JS", "desc": "" },
+    "monday": { "typeId": "social", "title": "Social", "desc": "" },
     "tuesday": { "typeId": "rest", "title": "Rest", "desc": "" },
     "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
     "thursday": { "typeId": "social", "title": "Social", "desc": "" },
     "friday": { "typeId": "jap", "title": "Jap", "desc": "" },
     "saturday": [
-      { "typeId": "fitness", "title": "Workout", "desc": "" },
+      { "typeId": "fitness", "title": "Work out", "desc": "" },
       { "typeId": "read", "title": "Read", "desc": "" },
       { "typeId": "social", "title": "Social", "desc": "" }
     ],
     "sunday": [
-      { "typeId": "fitness", "title": "Workout", "desc": ""},
+      { "typeId": "fitness", "title": "Work out", "desc": ""},
       { "typeId": "js", "title": "JS", "desc": "" },
       { "typeId": "js", "title": "JS", "desc": "" }
     ]
@@ -29,12 +29,12 @@
     "thursday": { "typeId": "social", "title": "Social", "desc": "" },
     "friday": { "typeId": "jap", "title": "Jap", "desc": "" },
     "saturday": [
-      { "typeId": "fitness", "title": "Workout", "desc": "" },
+      { "typeId": "fitness", "title": "Work out", "desc": "" },
       { "typeId": "read", "title": "Read", "desc": "" },
       { "typeId": "social", "title": "Social", "desc": "" }
     ],
     "sunday": [
-      { "typeId": "fitness", "title": "Workout", "desc": ""},
+      { "typeId": "fitness", "title": "Work out", "desc": ""},
       { "typeId": "js", "title": "JS", "desc": "" },
       { "typeId": "js", "title": "JS", "desc": "" }
     ]
