@@ -3,11 +3,11 @@
     "week": "1",
     "startDate": "2019-10-20",
     "endDate": "2019-10-27",
-    "monday": { "typeId": "social", "title": "Social", "desc": "" },
+    "monday": { "typeId": "js", "title": "JS", "desc": "" },
     "tuesday": { "typeId": "rest", "title": "Rest", "desc": "" },
     "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
     "thursday": { "typeId": "social", "title": "Social", "desc": "" },
-    "friday": { "typeId": "jap", "title": "Jap", "desc": "" },
+    "friday": { "typeId": "social", "title": "Social", "desc": "" },
     "saturday": [
       { "typeId": "fitness", "title": "Work out", "desc": "" },
       { "typeId": "read", "title": "Read", "desc": "" },

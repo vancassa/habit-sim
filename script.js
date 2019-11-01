@@ -33,6 +33,8 @@
             return currentWeekData;
         },
         render: function(weekData) {
+            let goalsJap = 0, goalsFitness = 0, goalsJS = 0;
+
             habit.renderNav(weekData.week);
             habit.$week.innerText = `Week ${weekData.week}`;
 
@@ -76,12 +78,24 @@
                 if ($el.id === "saturday" || $el.id === "sunday") {
                     weekData[$el.id].forEach(d => {
                         $el.appendChild(createActionEl(d));
+                        if (d.typeId === 'jap') goalsJap++;
+                        else if (d.typeId === 'fitness') goalsFitness++;
+                        else if (d.typeId === 'js') goalsJS++;
                     });
                 } else {
+                    let d = weekData[$el.id];
                     $el.appendChild(createConstantEl());
-                    $el.appendChild(createActionEl(weekData[$el.id]));
+                    $el.appendChild(createActionEl(d));
+                    if (d.typeId === 'jap') goalsJap++;
+                    else if (d.typeId === 'fitness') goalsFitness++;
+                    else if (d.typeId === 'js') goalsJS++;
                 }
             });
+
+            // Render goals indicator
+            document.querySelector('.profile--bar.type--jap span').innerText = goalsJap === 0 ? '' : `+ ${goalsJap}`;
+            document.querySelector('.profile--bar.type--fitness span').innerText = goalsFitness === 0 ? '' : `+ ${goalsFitness}`;
+            document.querySelector('.profile--bar.type--work span').innerText = goalsJS === 0 ? '': `+ ${goalsJS}`;
         },
         renderNav: function(week) {
             const $prevBtn = document.querySelector(".footer-nav.type--prev"),
