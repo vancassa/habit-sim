@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     position: relative;
 }
 
@@ -19,17 +19,23 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 3rem;
+}
+
+.weekDate {
+    text-align: center;
 }
 
 .week {
     margin-top: 0;
     font-size: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-bottom: 0;
     display: block;
     width: 100%;
+    text-align: center;
+}
+
+.date {
+    display: block;
     text-align: center;
 }
 
@@ -240,7 +246,6 @@ footer {
         font-size: 4rem;
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 0;
         position: initial;
         width: auto;
     }
