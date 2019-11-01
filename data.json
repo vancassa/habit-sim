@@ -4,20 +4,20 @@
     "startDate": "2019-10-20",
     "endDate": "2019-10-27",
     "activities": {
-      "monday": { "typeId": "js", "title": "JS", "desc": "" },
-      "tuesday": { "typeId": "rest", "title": "Rest", "desc": "" },
+      "monday": { "typeId": "fitness", "title": "workout", "desc": "" },
+      "tuesday": { "typeId": "js", "title": "js", "desc": "" },
       "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
       "thursday": { "typeId": "social", "title": "Social", "desc": "" },
-      "friday": { "typeId": "social", "title": "Social", "desc": "" },
+      "friday": { "typeId": "rest", "title": "rest", "desc": "" },
       "saturday": [
-        { "typeId": "fitness", "title": "Work out", "desc": "" },
+        { "typeId": "rest", "title": "Rest", "desc": "" },
         { "typeId": "read", "title": "Read", "desc": "" },
         { "typeId": "social", "title": "Social", "desc": "" }
       ],
       "sunday": [
-        { "typeId": "fitness", "title": "Work out", "desc": ""},
-        { "typeId": "js", "title": "JS", "desc": "" },
-        { "typeId": "js", "title": "JS", "desc": "" }
+        { "typeId": "rest", "title": "Rest", "desc": ""},
+        { "typeId": "social", "title": "social", "desc": "" },
+        { "typeId": "social", "title": "social", "desc": "" }
       ]
     }
   },
@@ -26,11 +26,11 @@
     "startDate": "2019-10-28",
     "endDate": "2019-11-3",
     "activities": {
-      "monday": { "typeId": "rest", "title": "Rest", "desc": "" },
+      "monday": { "typeId": "read", "title": "Read", "desc": "" },
       "tuesday": { "typeId": "rest", "title": "Rest", "desc": "" },
       "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
       "thursday": { "typeId": "social", "title": "Social", "desc": "" },
-      "friday": { "typeId": "social", "title": "Social", "desc": "" },
+      "friday": { "typeId": "jap", "title": "日本語", "desc": "" },
       "saturday": [
         { "typeId": "fitness", "title": "Work out", "desc": "" },
         { "typeId": "read", "title": "Read", "desc": "" },
