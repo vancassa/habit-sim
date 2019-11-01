@@ -1,5 +1,6 @@
 (function() {
     var habit = {
+        PROGRESS_CONSTANT: 10,
         $week: document.querySelector(".week"),
         $date: document.querySelector(".date"),
         $prevBtn: document.querySelector(".footer-nav.type--prev"),
@@ -112,7 +113,37 @@
             habit.$date.innerText = `${startDate.getDate()} ${startDateMonth} - ${endDate.getDate()} ${endDateMonth}`
         },
         renderProgressBars: function(weekData) {
-            
+            let totalJap = 0, totalFitness = 0, totalJS = 0;
+
+            function countAction(action) {
+                if (action.typeId === 'jap') totalJap++;
+                else if (action.typeId === 'fitness') totalFitness++;
+                else if (action.typeId === 'js') totalJS++;
+            }
+
+            const beforeThisWeek = habit.allData.filter(d => parseInt(d.week) <= parseInt(weekData.week));
+
+            beforeThisWeek.forEach(dataPerWeek => {
+                const activities = dataPerWeek.activities;
+
+                for (var k in activities) {
+                    if (activities.hasOwnProperty(k)) {
+                        if (k === 'saturday' || k === 'sunday') 
+                            activities[k].forEach(action => {countAction(action);})
+                        else 
+                            countAction(activities[k]);
+                    }
+                }
+            })
+
+            const $progressJap = document.querySelector('.profile--bar.type--jap');
+            const $progressFitness = document.querySelector('.profile--bar.type--fitness');
+            const $progressJS = document.querySelector('.profile--bar.type--work');
+
+            $progressJap.style.width = `${(totalJap)/habit.PROGRESS_CONSTANT}rem`;
+            $progressFitness.style.width = `${(totalFitness)/habit.PROGRESS_CONSTANT}rem`;
+            $progressJS.style.width = `${(totalJS)/habit.PROGRESS_CONSTANT}rem`;
+
         },
         renderNav: function(week) {
             let showPrevBtn = true, showNextBtn = true;
