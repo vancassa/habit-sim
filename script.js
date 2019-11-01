@@ -115,6 +115,7 @@
         },
         renderProgressBars: function(weekData) {
             let totalJap = 0, totalFitness = 0, totalJS = 0;
+            let hpCount = 10, mpCount = 10;
 
             function countAction(action) {
                 if (action.typeId === 'jap') totalJap++;
@@ -122,21 +123,36 @@
                 else if (action.typeId === 'js') totalJS++;
             }
 
+            function countHpMp(action) {
+                hpCount = (action.typeId === 'rest') ? 10 : (hpCount - 1);
+                mpCount = (action.typeId === 'social') ? 10 : (mpCount - 1);
+            }
+
             const beforeThisWeek = habit.allData.filter(d => parseInt(d.week) <= parseInt(weekData.week));
 
             beforeThisWeek.forEach(dataPerWeek => {
                 const activities = dataPerWeek.activities;
+                const thisWeek = dataPerWeek === weekData;
 
                 for (var k in activities) {
                     if (activities.hasOwnProperty(k)) {
                         if (k === 'saturday' || k === 'sunday') 
-                            activities[k].forEach(action => {countAction(action);})
-                        else 
+                            activities[k].forEach(action => {
+                                countAction(action);
+                                if (thisWeek) 
+                                    countHpMp(action);
+                            })
+                        else {
                             countAction(activities[k]);
+                            if (thisWeek)
+                                countHpMp(activities[k]);
+                        }
                     }
                 }
             })
 
+
+            // Render goals progress bar
             const $progressJap = document.querySelector('.profile--bar.type--jap');
             const $progressFitness = document.querySelector('.profile--bar.type--fitness');
             const $progressJS = document.querySelector('.profile--bar.type--js');
@@ -145,7 +161,26 @@
             $progressFitness.style.width = `${(totalFitness)/habit.PROGRESS_CONSTANT}rem`;
             $progressJS.style.width = `${(totalJS)/habit.PROGRESS_CONSTANT}rem`;
 
-        },
+            // Render HP and MP bar
+            const $hpBar = document.querySelector('.profile--bar.type--hp');
+            const $mpBar = document.querySelector('.profile--bar.type--mp');
+            const $hpText = document.querySelector('.profile--bar.type--hp span');
+            const $mpText = document.querySelector('.profile--bar.type--mp span');
+
+            $hpBar.style.width = `${hpCount*0.4}rem`;
+            $mpBar.style.width = `${mpCount*0.4}rem`;
+            $hpText.innerText = `${hpCount}/10`;
+            $mpText.innerText = `${mpCount}/10`;
+
+            hpCount < 5 ?
+                $hpText.setAttribute('style', 'position: absolute; right: -23px; color: red;') :
+                $hpText.removeAttribute('style')
+            
+            mpCount < 5 ?
+                $mpText.setAttribute('style', 'position: absolute; right: -23px; color: red;') :
+                $mpText.removeAttribute('style')
+            
+        },  
         renderNav: function(week) {
             let showPrevBtn = true, showNextBtn = true;
             
