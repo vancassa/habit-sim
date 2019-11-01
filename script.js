@@ -24,7 +24,7 @@
             const today = new Date();
 
             data.forEach(d => {
-                let startDate = new Date(d.startDate),
+                const startDate = new Date(d.startDate),
                     endDate = new Date(d.endDate);
 
                 if (today > startDate && today < endDate) {
@@ -39,6 +39,14 @@
 
             habit.renderNav(weekData.week);
             habit.$week.innerText = `Week ${weekData.week}`;
+
+            const startDate = new Date(weekData.startDate),
+                endDate = new Date(weekData.endDate);
+
+            const startDateMonth = startDate.toLocaleString('default', { month: 'long' }).slice(0, 3),
+                endDateMonth = endDate.toLocaleString('default', { month: 'long' }).slice(0, 3);
+
+            document.querySelector('.date').innerText = `${startDate.getDate()} ${startDateMonth} - ${endDate.getDate()} ${endDateMonth}`
 
             function createActionEl({ typeId, title, desc }) {
                 // Create action item card
