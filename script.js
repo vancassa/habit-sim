@@ -1,6 +1,8 @@
 (function() {
     var habit = {
         $week: document.querySelector(".week"),
+        $prevBtn: document.querySelector(".footer-nav.type--prev"),
+        $nextBtn: document.querySelector(".footer-nav.type--next"),
         allData: [],
         currentData: {},
         start: function() {
@@ -98,9 +100,6 @@
             document.querySelector('.profile--bar.type--work span').innerText = goalsJS === 0 ? '': `+ ${goalsJS}`;
         },
         renderNav: function(week) {
-            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
-                $nextBtn = document.querySelector(".footer-nav.type--next");
-
             let showPrevBtn = true, showNextBtn = true;
             
             if (week === habit.allData[0].week) {
@@ -111,8 +110,8 @@
                 showNextBtn = false;
             }
 
-            $prevBtn.style.visibility = showPrevBtn ? "visible" : "hidden";
-            $nextBtn.style.visibility = showNextBtn ? "visible" : "hidden";
+            habit.$prevBtn.style.visibility = showPrevBtn ? "visible" : "hidden";
+            habit.$nextBtn.style.visibility = showNextBtn ? "visible" : "hidden";
         },
         eventListeners: function() {
 
@@ -134,12 +133,8 @@
 
 
             // Prev / Next button event listeners
-            const $prevBtn = document.querySelector(".footer-nav.type--prev"),
-                $nextBtn = document.querySelector(".footer-nav.type--next");
-
-            $prevBtn.addEventListener("mousedown", goPrevPage);
-
-            $nextBtn.addEventListener("mousedown", goNextPage);
+            habit.$prevBtn.addEventListener("mousedown", goPrevPage);
+            habit.$nextBtn.addEventListener("mousedown", goNextPage);
 
             // Arrow key left & right
             window.addEventListener('keydown', function(e) {
