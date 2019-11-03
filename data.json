@@ -48,7 +48,7 @@
     "startDate": "2019-11-4",
     "endDate": "2019-11-10",
     "activities": {
-      "monday": { "typeId": "js", "title": "js", "desc": "" },
+      "monday": { "typeId": "social", "title": "social", "desc": "" },
       "tuesday": { "typeId": "social", "title": "Social", "desc": "" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "" },
       "thursday": { "typeId": "social", "title": "Social", "desc": "" },
