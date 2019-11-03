@@ -42,5 +42,27 @@
         { "typeId": "js", "title": "JS", "desc": "" }
       ]
     }
+  },
+  {
+    "week": "3",
+    "startDate": "2019-11-4",
+    "endDate": "2019-11-10",
+    "activities": {
+      "monday": { "typeId": "js", "title": "js", "desc": "" },
+      "tuesday": { "typeId": "social", "title": "Social", "desc": "" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "" },
+      "thursday": { "typeId": "social", "title": "Social", "desc": "" },
+      "friday": { "typeId": "jap", "title": "日本語", "desc": "" },
+      "saturday": [
+        { "typeId": "jap", "title": "日本語", "desc": "" },
+        { "typeId": "read", "title": "Read", "desc": "" },
+        { "typeId": "social", "title": "Social", "desc": "" }
+      ],
+      "sunday": [
+        { "typeId": "fitness", "title": "Work out", "desc": ""},
+        { "typeId": "js", "title": "JS", "desc": "" },
+        { "typeId": "js", "title": "JS", "desc": "" }
+      ]
+    }
   }
 ]
