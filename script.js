@@ -231,8 +231,8 @@
 
             window.addEventListener('touchend', function(e) {
                 const changedX = e.changedTouches[0].clientX - habit.startTouchX;
-                if      (changedX > 75)  goNextPage();
-                else if (changedX < -75) goPrevPage();
+                if      (changedX > 75)  goPrevPage();
+                else if (changedX < -75) goNextPage();
             })
         }
     };
