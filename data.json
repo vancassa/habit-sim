@@ -52,7 +52,7 @@
       "tuesday": { "typeId": "social", "title": "Social", "desc": "" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "" },
       "thursday": { "typeId": "social", "title": "Social", "desc": "" },
-      "friday": { "typeId": "jap", "title": "日本語", "desc": "" },
+      "friday": { "typeId": "rest", "title": "Rest", "desc": "" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "" },
         { "typeId": "read", "title": "Read", "desc": "" },
