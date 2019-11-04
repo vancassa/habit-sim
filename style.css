@@ -197,6 +197,13 @@ main {
     background-color: rgb(0, 0, 0, 20%);
 }
 
+.activity_action--desc {
+    background-color: rgba(0, 0, 0, 70%);
+    padding: 1rem;
+    color: white;
+    position: absolute;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
