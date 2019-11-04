@@ -62,12 +62,12 @@
                 // action.appendChild(actionDesc);
 
                 action.addEventListener('mouseenter', function(e) {
-                    const $desc = document.createElement('div');
-                    $desc.classList.add('activity_action--desc');
-                    $desc.innerText = (desc === '') ? '' : desc;
-                    $desc.style.left = `${e.target.offsetLeft+20}px`;
-                    $desc.style.top = `${e.target.offsetTop+20}px`;
-                    if (desc !== '') e.target.appendChild($desc);
+                    if (desc !== '') {
+                        const $desc = document.createElement('div');
+                        $desc.classList.add('activity_action--desc');
+                        $desc.innerText = desc;
+                        e.target.appendChild($desc);
+                    } 
                 })
 
                 action.addEventListener('mouseleave', function(e) {
