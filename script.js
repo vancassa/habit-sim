@@ -1,6 +1,7 @@
 (function() {
     var habit = {
         PROGRESS_CONSTANT: 10,
+        STATS_WIDTH: 0.4,
         $week: document.querySelector(".week"),
         $date: document.querySelector(".date"),
         $prevBtn: document.querySelector(".footer-nav.type--prev"),
@@ -167,8 +168,8 @@
             const $hpText = document.querySelector('.profile--bar.type--hp span');
             const $mpText = document.querySelector('.profile--bar.type--mp span');
 
-            $hpBar.style.width = `${hpCount*0.4}rem`;
-            $mpBar.style.width = `${mpCount*0.4}rem`;
+            $hpBar.style.width = `${hpCount*habit.STATS_WIDTH}rem`;
+            $mpBar.style.width = `${mpCount*habit.STATS_WIDTH}rem`;
             $hpText.innerText = `${hpCount}/10`;
             $mpText.innerText = `${mpCount}/10`;
 
@@ -179,7 +180,9 @@
             mpCount < 5 ?
                 $mpText.setAttribute('style', 'position: absolute; right: -23px; color: red;') :
                 $mpText.removeAttribute('style')
-            
+
+            // Render HP and MP container
+            document.querySelectorAll('.profile_bar_container').forEach($el => $el.style.width = `${habit.PROGRESS_CONSTANT * habit.STATS_WIDTH}rem`);
         },  
         renderNav: function(week) {
             let showPrevBtn = true, showNextBtn = true;
