@@ -235,44 +235,54 @@
                 else if (changedX < -75) goNextPage();
             })
 
-            // Hover
+            // Hover on progress bar - show progress details
+            function showProgressDetail(hours, x, y) {
+                const $progressDetail = document.createElement('div');
+                $progressDetail.innerText = `Total time spent: ${hours} hours`;
+                $progressDetail.classList.add('progress_detail');
+                $progressDetail.style.top = `${y}px`;
+                $progressDetail.style.left = `${x}px`;
+
+                document.querySelector('body').appendChild($progressDetail);
+            }
+
+            function removeProgressDetail() {
+                const $progressDetail = document.querySelector('.progress_detail');
+                if ($progressDetail) $progressDetail.remove();
+            }
+
+            // Mouse hover events
             document.querySelectorAll('.profile_goals .profile--bar').forEach($el => {
                 $el.addEventListener('mouseenter', function(e) {
                     const widthString = e.target.style.width;
                     const width = widthString.slice(0, widthString.indexOf('rem'));
                     const hours = parseFloat(width) * habit.PROGRESS_CONSTANT;
 
-                    const $progressDetail = document.createElement('div');
-                    $progressDetail.innerText = `Total time spent: ${hours} hours`;
-                    $progressDetail.classList.add('progress_detail');
-                    $progressDetail.style.top = `${e.y}px`;
-                    $progressDetail.style.left = `${e.x}px`;
-
-                    document.querySelector('body').appendChild($progressDetail);
+                    showProgressDetail(hours, e.y, e.x);
                 })
 
                 $el.addEventListener('mouseleave', function(e) {
                     document.querySelector('.progress_detail').remove();
                 })
-
-                // $el.addEventListener('touchstart', function(e) {
-                //     // if (e.target.classList.contains('type--jap')) {
-                //         const widthString = e.target.style.width;
-                //         const width = widthString.slice(0, widthString.indexOf('rem'));
-                //         const hours = parseFloat(width) * habit.PROGRESS_CONSTANT;
-
-                //         const $progressDetail = document.createElement('div');
-                //         $progressDetail.innerText = `Total time spent: ${hours} hours`;
-                //         $progressDetail.classList.add('progress_detail');
-                //         $progressDetail.style.top = `${e.y}px`;
-                //         $progressDetail.style.left = `${e.x}px`;
-
-                //         document.querySelector('body').appendChild($progressDetail);
-                //     // }
-                // })
             })
 
+            // Touch events
+            document.querySelector('body').addEventListener('touchstart', function(e) {
+                removeProgressDetail();
 
+                if (e.target.classList.contains('profile--bar') &&
+                    e.target.parentElement.classList.contains('profile_goals'))
+                {
+                    const widthString = e.target.style.width;
+                    const width = widthString.slice(0, widthString.indexOf('rem'));
+                    const hours = parseFloat(width) * habit.PROGRESS_CONSTANT;
+
+                    showProgressDetail(hours, e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+                }
+                else {
+                    removeProgressDetail();
+                }
+            })
         }
     };
 

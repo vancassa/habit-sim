@@ -128,7 +128,7 @@ main {
 .progress_detail {
     color: white;
     background-color: rgb(0, 0, 0, 70%);
-    padding: 1rem;
+    padding: 0.5rem;
     position: absolute;
     font-size: 0.75rem;
 }
