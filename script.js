@@ -53,12 +53,12 @@
                 const actionTitle = document.createElement("span");
                 actionTitle.classList.add("activity_action_item--title");
                 actionTitle.innerText = title;
-                const actionDesc = document.createElement("span");
-                actionDesc.classList.add("activity_action_item--desc");
-                actionDesc.innerText = desc;
+                // const actionDesc = document.createElement("span");
+                // actionDesc.classList.add("activity_action_item--desc");
+                // actionDesc.innerText = desc;
 
                 action.appendChild(actionTitle);
-                action.appendChild(actionDesc);
+                // action.appendChild(actionDesc);
 
                 return action;
             }

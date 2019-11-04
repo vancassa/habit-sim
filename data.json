@@ -4,7 +4,7 @@
     "startDate": "2019-10-20",
     "endDate": "2019-10-27",
     "activities": {
-      "monday": { "typeId": "fitness", "title": "workout", "desc": "" },
+      "monday": { "typeId": "fitness", "title": "workout", "desc": "Test" },
       "tuesday": { "typeId": "js", "title": "js", "desc": "" },
       "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
       "thursday": { "typeId": "social", "title": "Social", "desc": "" },
