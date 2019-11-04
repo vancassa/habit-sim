@@ -275,7 +275,7 @@
                     const width = widthString.slice(0, widthString.indexOf('rem'));
                     const hours = parseFloat(width) * habit.PROGRESS_CONSTANT;
 
-                    showProgressDetail(hours, e.y, e.x);
+                    showProgressDetail(hours, e.x, e.y);
                 })
 
                 $el.addEventListener('mouseleave', function(e) {
