@@ -238,20 +238,17 @@
             // Hover
             document.querySelectorAll('.profile_goals .profile--bar').forEach($el => {
                 $el.addEventListener('mouseenter', function(e) {
-                    console.log('e :', e);
-                    // if (e.target.classList.contains('type--jap')) {
-                        const widthString = e.target.style.width;
-                        const width = widthString.slice(0, widthString.indexOf('rem'));
-                        const hours = parseFloat(width) * habit.PROGRESS_CONSTANT;
+                    const widthString = e.target.style.width;
+                    const width = widthString.slice(0, widthString.indexOf('rem'));
+                    const hours = parseFloat(width) * habit.PROGRESS_CONSTANT;
 
-                        const $progressDetail = document.createElement('div');
-                        $progressDetail.innerText = `Total time spent: ${hours} hours`;
-                        $progressDetail.classList.add('progress_detail');
-                        $progressDetail.style.top = `${e.y}px`;
-                        $progressDetail.style.left = `${e.x}px`;
+                    const $progressDetail = document.createElement('div');
+                    $progressDetail.innerText = `Total time spent: ${hours} hours`;
+                    $progressDetail.classList.add('progress_detail');
+                    $progressDetail.style.top = `${e.y}px`;
+                    $progressDetail.style.left = `${e.x}px`;
 
-                        document.querySelector('body').appendChild($progressDetail);
-                    // }
+                    document.querySelector('body').appendChild($progressDetail);
                 })
 
                 $el.addEventListener('mouseleave', function(e) {
