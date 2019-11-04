@@ -5,13 +5,13 @@
     "endDate": "2019-10-27",
     "activities": {
       "monday": { "typeId": "fitness", "title": "workout", "desc": "" },
-      "tuesday": { "typeId": "js", "title": "js", "desc": "" },
-      "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
-      "thursday": { "typeId": "social", "title": "Social", "desc": "" },
+      "tuesday": { "typeId": "js", "title": "js", "desc": "MERN Stack by Brad Traversy" },
+      "wednesday": { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" },
+      "thursday": { "typeId": "social", "title": "Social", "desc": "CG" },
       "friday": { "typeId": "rest", "title": "rest", "desc": "" },
       "saturday": [
-        { "typeId": "jap", "title": "日本語", "desc": "" },
-        { "typeId": "read", "title": "Read", "desc": "" },
+        { "typeId": "jap", "title": "日本語", "desc": "Class" },
+        { "typeId": "read", "title": "Read", "desc": "A Book Apart: Accessibility for Everyone" },
         { "typeId": "social", "title": "Social", "desc": "" }
       ],
       "sunday": [
@@ -26,20 +26,20 @@
     "startDate": "2019-10-28",
     "endDate": "2019-11-3",
     "activities": {
-      "monday": { "typeId": "read", "title": "Read", "desc": "" },
+      "monday": { "typeId": "read", "title": "Read", "desc": "A Book Apart: Accessibility for Everyone" },
       "tuesday": { "typeId": "rest", "title": "Rest", "desc": "" },
-      "wednesday": { "typeId": "js", "title": "JS", "desc": "" },
-      "thursday": { "typeId": "social", "title": "Social", "desc": "" },
-      "friday": { "typeId": "jap", "title": "日本語", "desc": "" },
+      "wednesday": { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" },
+      "thursday": { "typeId": "social", "title": "Social", "desc": "CG" },
+      "friday": { "typeId": "jap", "title": "日本語", "desc": "Class" },
       "saturday": [
         { "typeId": "fitness", "title": "Work out", "desc": "" },
-        { "typeId": "read", "title": "Read", "desc": "" },
+        { "typeId": "read", "title": "Read", "desc": "A Book Apart: Accessibility for Everyone" },
         { "typeId": "social", "title": "Social", "desc": "" }
       ],
       "sunday": [
         { "typeId": "fitness", "title": "Work out", "desc": ""},
-        { "typeId": "js", "title": "JS", "desc": "" },
-        { "typeId": "js", "title": "JS", "desc": "" }
+        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" },
+        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" }
       ]
     }
   },
@@ -55,13 +55,13 @@
       "friday": { "typeId": "rest", "title": "Rest", "desc": "" },
       "saturday": [
         { "typeId": "social", "title": "Social", "desc": "Wedding" },
-        { "typeId": "js", "title": "JS", "desc": "" },
+        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" },
         { "typeId": "rest", "title": "rest", "desc": "" }
       ],
       "sunday": [
         { "typeId": "fitness", "title": "Work out", "desc": ""},
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-        { "typeId": "js", "title": "js", "desc": "" }
+        { "typeId": "js", "title": "js", "desc": "MERN Stack by Brad Traversy" }
       ]
     }
   }
