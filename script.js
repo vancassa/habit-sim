@@ -182,8 +182,8 @@
             const $hpText = document.querySelector('.profile--bar.type--hp span');
             const $mpText = document.querySelector('.profile--bar.type--mp span');
 
-            $hpBar.style.width = `${hpCount*habit.STATS_WIDTH}rem`;
-            $mpBar.style.width = `${mpCount*habit.STATS_WIDTH}rem`;
+            $hpBar.style.width = (hpCount < 0) ? `0` : `${hpCount*habit.STATS_WIDTH}rem`;
+            $mpBar.style.width = (mpCount < 0) ? `0` :  `${mpCount*habit.STATS_WIDTH}rem`;
             $hpText.innerText = `${hpCount}/10`;
             $mpText.innerText = `${mpCount}/10`;
 

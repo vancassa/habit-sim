@@ -78,7 +78,7 @@
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
         { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" }
+        { "typeId": "rest", "title": "rest", "desc": "" }
       ],
       "sunday": [
         { "typeId": "fitness", "title": "Work out", "desc": ""},
