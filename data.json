@@ -38,8 +38,8 @@
       ],
       "sunday": [
         { "typeId": "fitness", "title": "Work out", "desc": ""},
-        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" },
-        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" }
+        { "typeId": "js", "title": "JS", "desc": "Side project: habit-sim" },
+        { "typeId": "js", "title": "JS", "desc": "Side project: habit-sim" }
       ]
     }
   },
@@ -82,8 +82,8 @@
       ],
       "sunday": [
         { "typeId": "js", "title": "日本語", "desc": "Watch movie"},
-        { "typeId": "js", "title": "js", "desc": "MERN Stack by Brad Traversy" },
-        { "typeId": "js", "title": "js", "desc": "MERN Stack by Brad Traversy" }
+        { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" },
+        { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" }
       ]
     }
   }
