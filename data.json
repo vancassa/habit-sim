@@ -50,18 +50,18 @@
     "activities": {
       "monday": { "typeId": "social", "title": "social", "desc": "Rosary" },
       "tuesday": { "typeId": "social", "title": "Social", "desc": "Junior Dev SG mentoring" },
-      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Meetup" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
       "thursday": { "typeId": "social", "title": "Social", "desc": "CG" },
       "friday": { "typeId": "rest", "title": "Rest", "desc": "" },
       "saturday": [
         { "typeId": "social", "title": "Social", "desc": "Wedding" },
-        { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-        { "typeId": "js", "title": "JS", "desc": "MERN Stack by Brad Traversy" }
+        { "typeId": "jap", "title": "Social", "desc": "Wedding" },
+        { "typeId": "js", "title": "JS", "desc": "pokedex-me" }
       ],
       "sunday": [
-        { "typeId": "fitness", "title": "Work out", "desc": ""},
+        { "typeId": "fitness", "title": "日本語", "desc": "Self-study"},
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-        { "typeId": "js", "title": "js", "desc": "MERN Stack by Brad Traversy" }
+        { "typeId": "js", "title": "js", "desc": "pokedex-me" }
       ]
     }
   },
@@ -72,7 +72,7 @@
     "activities": {
       "monday": { "typeId": "social", "title": "social", "desc": "Rosary" },
       "tuesday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
-      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Meetup" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
       "thursday": { "typeId": "rest", "title": "rest", "desc": "" },
       "friday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
       "saturday": [
