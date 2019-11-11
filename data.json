@@ -77,7 +77,7 @@
       "friday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-        { "typeId": "social", "title": "Social", "desc": "Lunch" },
+        { "typeId": "social", "title": "Social", "desc": "Igo class lunch" },
         { "typeId": "fitness", "title": "Work out", "desc": "" }
       ],
       "sunday": [
