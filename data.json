@@ -55,11 +55,11 @@
       "friday": { "typeId": "rest", "title": "Rest", "desc": "" },
       "saturday": [
         { "typeId": "social", "title": "Social", "desc": "Wedding" },
-        { "typeId": "jap", "title": "Social", "desc": "Wedding" },
+        { "typeId": "social", "title": "Social", "desc": "Wedding" },
         { "typeId": "js", "title": "JS", "desc": "pokedex-me" }
       ],
       "sunday": [
-        { "typeId": "fitness", "title": "日本語", "desc": "Self-study"},
+        { "typeId": "jap", "title": "日本語", "desc": "Self-study"},
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
         { "typeId": "js", "title": "js", "desc": "pokedex-me" }
       ]
@@ -81,7 +81,7 @@
         { "typeId": "fitness", "title": "Work out", "desc": "" }
       ],
       "sunday": [
-        { "typeId": "js", "title": "日本語", "desc": "Watch movie"},
+        { "typeId": "jap", "title": "日本語", "desc": "Watch movie"},
         { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" },
         { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" }
       ]
