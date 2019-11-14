@@ -71,13 +71,17 @@
     "endDate": "2019-11-17",
     "activities": {
       "monday": { "typeId": "social", "title": "social", "desc": "Rosary" },
-      "tuesday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
+      "tuesday": { "typeId": "rest", "title": "rest", "desc": "Dinner" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "rest", "title": "rest", "desc": "" },
+      "thursday": { "typeId": "js", "title": "Side project: pokedex-me", "desc": "" },
       "friday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
+<<<<<<< HEAD
+        { "typeId": "social", "title": "social", "desc": "Lunch" },
+=======
         { "typeId": "social", "title": "Social", "desc": "Igo class lunch" },
+>>>>>>> 5362f4e976775afc6a175e425c70c5653fd85ed3
         { "typeId": "fitness", "title": "Work out", "desc": "" }
       ],
       "sunday": [
