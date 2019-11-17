@@ -71,23 +71,41 @@
     "endDate": "2019-11-17",
     "activities": {
       "monday": { "typeId": "social", "title": "social", "desc": "Rosary" },
-      "tuesday": { "typeId": "rest", "title": "rest", "desc": "Dinner" },
+      "tuesday": { "typeId": "rest", "title": "rest", "desc": "" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "js", "title": "Side project: pokedex-me", "desc": "" },
+      "thursday": { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" },
       "friday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-<<<<<<< HEAD
-        { "typeId": "social", "title": "social", "desc": "Lunch" },
-=======
         { "typeId": "social", "title": "Social", "desc": "Igo class lunch" },
->>>>>>> 5362f4e976775afc6a175e425c70c5653fd85ed3
-        { "typeId": "fitness", "title": "Work out", "desc": "" }
+        { "typeId": "rest", "title": "Rest", "desc": "" }
       ],
       "sunday": [
         { "typeId": "jap", "title": "日本語", "desc": "Watch movie"},
         { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" },
         { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" }
+      ]
+    }
+  },
+  {
+    "week": "5",
+    "startDate": "2019-11-18",
+    "endDate": "2019-11-24",
+    "activities": {
+      "monday": { "typeId": "social", "title": "social", "desc": "Rosary" },
+      "tuesday": { "typeId": "rest", "title": "rest", "desc": "" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
+      "thursday": { "typeId": "social", "title": "social", "desc": "CG" },
+      "friday": { "typeId": "social", "title": "Social", "desc": "Dinner" },
+      "saturday": [
+        { "typeId": "jap", "title": "日本語", "desc": "Class" },
+        { "typeId": "read", "title": "read", "desc": "" },
+        { "typeId": "rest", "title": "Rest", "desc": "" }
+      ],
+      "sunday": [
+        { "typeId": "jap", "title": "日本語", "desc": "Watch movie"},
+        { "typeId": "js", "title": "js", "desc": "Side project: pokedex-me" },
+        { "typeId": "social", "title": "social", "desc": "dinner" }
       ]
     }
   }
