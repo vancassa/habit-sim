@@ -114,20 +114,20 @@
     "startDate": "2019-11-25",
     "endDate": "2019-12-01",
     "activities": {
-      "monday": { "typeId": "social", "title": "social", "desc": "Rosary" },
-      "tuesday": { "typeId": "social", "title": "social", "desc": "Junior Dev SG" },
+      "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
+      "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "js", "title": "js", "desc": "Side project: portfolio" },
-      "friday": { "typeId": "rest", "title": "rest", "desc": "" },
+      "thursday": { "typeId": "js", "title": "", "desc": "Side project: portfolio" },
+      "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-        { "typeId": "js", "title": "js", "desc": "Side project: portfolio" },
-        { "typeId": "js", "title": "js", "desc": "Side project: portfolio" }
+        { "typeId": "js", "title": "", "desc": "Side project: portfolio" },
+        { "typeId": "js", "title": "", "desc": "Side project: portfolio" }
       ],
       "sunday": [
-        { "typeId": "js", "title": "js", "desc": "Side project: portfolio"},
+        { "typeId": "js", "title": "", "desc": "Side project: portfolio"},
         { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-        { "typeId": "js", "title": "js", "desc": "Side project: portfolio" }
+        { "typeId": "js", "title": "", "desc": "Side project: portfolio" }
       ]
     }
   }

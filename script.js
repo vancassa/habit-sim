@@ -53,7 +53,7 @@
                 action.style.backgroundImage = `url("images/${typeId}.jpg")`;
                 const actionTitle = document.createElement("span");
                 actionTitle.classList.add("activity_action_item--title");
-                actionTitle.innerText = title;
+                actionTitle.innerText = title ? title : typeId;
                 // const actionDesc = document.createElement("span");
                 // actionDesc.classList.add("activity_action_item--desc");
                 // actionDesc.innerText = desc;
