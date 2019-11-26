@@ -121,13 +121,13 @@
       "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-        { "typeId": "js", "title": "", "desc": "Side project: portfolio" },
-        { "typeId": "js", "title": "", "desc": "Side project: portfolio" }
+        { "typeId": "social", "title": "", "desc": "Devfest Singapore" },
+        { "typeId": "social", "title": "", "desc": "Karaoke" }
       ],
       "sunday": [
-        { "typeId": "js", "title": "", "desc": "Side project: portfolio"},
+        { "typeId": "js", "title": "", "desc": "React Native"},
         { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-        { "typeId": "js", "title": "", "desc": "Side project: portfolio" }
+        { "typeId": "social", "title": "", "desc": "Dinner" }
       ]
     }
   }
