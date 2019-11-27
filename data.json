@@ -117,7 +117,7 @@
       "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
       "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "js", "title": "", "desc": "Side project: portfolio" },
+      "thursday": { "typeId": "social", "title": "", "desc": "HackerX" },
       "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
