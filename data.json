@@ -139,7 +139,7 @@
       "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
       "tuesday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "social", "title": "", "desc": "ReactKnowledgable" },
+      "thursday": { "typeId": "social", "title": "", "desc": "React Knowledgable" },
       "friday": { "typeId": "fitness", "title": "Exercise", "desc": "Oxigeno" },
       "saturday": [
         { "typeId": "", "title": "Lourdes", "desc": "The Lourdes Experience" },
@@ -158,11 +158,11 @@
     "startDate": "2019-12-09",
     "endDate": "2019-12-15",
     "activities": {
-      "monday": { "typeId": "", "title": "", "desc": "" },
-      "tuesday": { "typeId": "", "title": "", "desc": "" },
+      "monday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
+      "tuesday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "", "title": "", "desc": "" },
-      "friday": { "typeId": "", "title": "", "desc": "" },
+      "thursday": { "typeId": "social", "title": "", "desc": "CG" },
+      "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
         { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" },
         { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" },
@@ -170,8 +170,30 @@
       ],
       "sunday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class"},
+        { "typeId": "js", "title": "", "desc": "React Native" },
+        { "typeId": "js", "title": "", "desc": "React Native" }
+      ]
+    }
+  },
+  {
+    "week": "9",
+    "startDate": "2019-12-16",
+    "endDate": "2019-12-22",
+    "activities": {
+      "monday": { "typeId": "", "title": "", "desc": "" },
+      "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG mentoring" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
+      "thursday": { "typeId": "", "title": "", "desc": "" },
+      "friday": { "typeId": "", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "jap", "title": "日本語", "desc": "Class"},
         { "typeId": "", "title": "", "desc": "" },
         { "typeId": "", "title": "", "desc": "" }
+      ],
+      "sunday": [
+        { "typeId": "js", "title": "Hackathon", "desc": "Personal hackathon"},
+        { "typeId": "js", "title": "Hackathon", "desc": "Personal hackathon" },
+        { "typeId": "js", "title": "Hackathon", "desc": "Personal hackathon" }
       ]
     }
   }
