@@ -137,7 +137,7 @@
     "endDate": "2019-12-08",
     "activities": {
       "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
-      "tuesday": { "typeId": "rest", "title": "", "desc": "" },
+      "tuesday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
       "thursday": { "typeId": "social", "title": "", "desc": "ReactKnowledgable" },
       "friday": { "typeId": "fitness", "title": "Exercise", "desc": "Oxigeno" },
@@ -148,13 +148,13 @@
       ],
       "sunday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class"},
-        { "typeId": "rest", "title": "", "desc": "" },
-        { "typeId": "rest", "title": "", "desc": "" }
+        { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
+        { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" }
       ]
     }
   },
   {
-    "week": "7",
+    "week": "8",
     "startDate": "2019-12-09",
     "endDate": "2019-12-15",
     "activities": {
