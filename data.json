@@ -117,17 +117,61 @@
       "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
       "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "social", "title": "", "desc": "HackerX" },
+      "thursday": { "typeId": "rest", "title": "", "desc": "" },
       "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class" },
-        { "typeId": "social", "title": "", "desc": "Devfest Singapore" },
+        { "typeId": "read", "title": "", "desc": "Think and Grow Rich" },
         { "typeId": "social", "title": "", "desc": "Karaoke" }
       ],
       "sunday": [
-        { "typeId": "js", "title": "", "desc": "React Native"},
+        { "typeId": "", "title": "Chore", "desc": ""},
         { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
         { "typeId": "social", "title": "", "desc": "Dinner" }
+      ]
+    }
+  },
+  {
+    "week": "7",
+    "startDate": "2019-12-02",
+    "endDate": "2019-12-08",
+    "activities": {
+      "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
+      "tuesday": { "typeId": "rest", "title": "", "desc": "" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
+      "thursday": { "typeId": "social", "title": "", "desc": "ReactKnowledgable" },
+      "friday": { "typeId": "fitness", "title": "Exercise", "desc": "Oxigeno" },
+      "saturday": [
+        { "typeId": "", "title": "Lourdes", "desc": "The Lourdes Experience" },
+        { "typeId": "", "title": "Lourdes", "desc": "The Lourdes Experience" },
+        { "typeId": "", "title": "Lourdes", "desc": "The Lourdes Experience" }
+      ],
+      "sunday": [
+        { "typeId": "jap", "title": "日本語", "desc": "Class"},
+        { "typeId": "rest", "title": "", "desc": "" },
+        { "typeId": "rest", "title": "", "desc": "" }
+      ]
+    }
+  },
+  {
+    "week": "7",
+    "startDate": "2019-12-09",
+    "endDate": "2019-12-15",
+    "activities": {
+      "monday": { "typeId": "", "title": "", "desc": "" },
+      "tuesday": { "typeId": "", "title": "", "desc": "" },
+      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
+      "thursday": { "typeId": "", "title": "", "desc": "" },
+      "friday": { "typeId": "", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" },
+        { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" },
+        { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" }
+      ],
+      "sunday": [
+        { "typeId": "jap", "title": "日本語", "desc": "Class"},
+        { "typeId": "", "title": "", "desc": "" },
+        { "typeId": "", "title": "", "desc": "" }
       ]
     }
   }
