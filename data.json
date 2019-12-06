@@ -138,9 +138,9 @@
     "activities": {
       "monday": { "typeId": "social", "title": "", "desc": "Rosary" },
       "tuesday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
-      "wednesday": { "typeId": "rest", "title": "", "desc": "" },
-      "thursday": { "typeId": "chore", "title": "", "desc": "" },
-      "friday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
+      "wednesday": { "typeId": "rest", "title": "", "desc": "Capek hidup" },
+      "thursday": { "typeId": "rest", "title": "", "desc": "Capek hidup" },
+      "friday": { "typeId": "rest", "title": "", "desc": "Capek hidup" },
       "saturday": [
         { "typeId": "", "title": "Lourdes", "desc": "The Lourdes Experience" },
         { "typeId": "", "title": "Lourdes", "desc": "The Lourdes Experience" },
