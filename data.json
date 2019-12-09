@@ -159,10 +159,10 @@
     "endDate": "2019-12-15",
     "activities": {
       "monday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
-      "tuesday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
-      "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
+      "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG social" },
+      "wednesday": { "typeId": "social", "title": "", "desc": "Dinner" },
       "thursday": { "typeId": "social", "title": "", "desc": "CG" },
-      "friday": { "typeId": "rest", "title": "", "desc": "" },
+      "friday": { "typeId": "social", "title": "", "desc": "Karaoke" },
       "saturday": [
         { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" },
         { "typeId": "", "title": "Hackathon", "desc": "Super Silly Hackathon" },
