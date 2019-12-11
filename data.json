@@ -160,7 +160,7 @@
     "activities": {
       "monday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
       "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG social" },
-      "wednesday": { "typeId": "social", "title": "", "desc": "Dinner" },
+      "wednesday": { "typeId": "rest", "title": "", "desc": "Super Silly Hackathon" },
       "thursday": { "typeId": "social", "title": "", "desc": "CG" },
       "friday": { "typeId": "social", "title": "", "desc": "Karaoke" },
       "saturday": [
@@ -180,15 +180,15 @@
     "startDate": "2019-12-16",
     "endDate": "2019-12-22",
     "activities": {
-      "monday": { "typeId": "", "title": "", "desc": "" },
+      "monday": { "typeId": "rest", "title": "", "desc": "" },
       "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG mentoring" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
-      "thursday": { "typeId": "", "title": "", "desc": "" },
-      "friday": { "typeId": "", "title": "", "desc": "" },
+      "thursday": { "typeId": "rest", "title": "", "desc": "" },
+      "friday": { "typeId": "social", "title": "", "desc": "BBAUV dinner" },
       "saturday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class"},
-        { "typeId": "", "title": "", "desc": "" },
-        { "typeId": "", "title": "", "desc": "" }
+        { "typeId": "js", "title": "", "desc": "" },
+        { "typeId": "js", "title": "", "desc": "" }
       ],
       "sunday": [
         { "typeId": "js", "title": "Hackathon", "desc": "Personal hackathon"},
