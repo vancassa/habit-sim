@@ -170,8 +170,8 @@
       ],
       "sunday": [
         { "typeId": "jap", "title": "日本語", "desc": "Class"},
-        { "typeId": "js", "title": "", "desc": "React Native" },
-        { "typeId": "js", "title": "", "desc": "React Native" }
+        { "typeId": "chore", "title": "", "desc": "Cleaning" },
+        { "typeId": "social", "title": "", "desc": "Dinner" }
       ]
     }
   },
@@ -180,7 +180,7 @@
     "startDate": "2019-12-16",
     "endDate": "2019-12-22",
     "activities": {
-      "monday": { "typeId": "rest", "title": "", "desc": "" },
+      "monday": { "typeId": "social", "title": "", "desc": "Bouldering" },
       "tuesday": { "typeId": "social", "title": "", "desc": "Junior Dev SG mentoring" },
       "wednesday": { "typeId": "jap", "title": "日本語", "desc": "Conversation" },
       "thursday": { "typeId": "rest", "title": "", "desc": "" },
