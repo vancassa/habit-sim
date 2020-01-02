@@ -39,7 +39,7 @@
             return currentWeekData;
         },
         render: function(weekData) {
-            let goalsJap = 0, goalsFitness = 0, goalsJS = 0;
+            let goal1 = 0, goal2 = 0, goal3 = 0;
 
             habit.renderNav(weekData.week);
             habit.$week.innerText = `Week ${weekData.week}`;
@@ -100,24 +100,24 @@
                 if ($el.id === "saturday" || $el.id === "sunday") {
                     weekData.activities[$el.id].forEach(d => {
                         $el.appendChild(createActionEl(d));
-                        if (d.typeId === 'jap') goalsJap++;
-                        else if (d.typeId === 'fitness') goalsFitness++;
-                        else if (d.typeId === 'js') goalsJS++;
+                        if (d.typeId === 'draw') goal1++;
+                        else if (d.typeId === 'social') goal2++;
+                        else if (d.typeId === 'work') goal3++;
                     });
                 } else {
                     let d = weekData.activities[$el.id];
                     $el.appendChild(createConstantEl());
                     $el.appendChild(createActionEl(d));
-                    if (d.typeId === 'jap') goalsJap++;
-                    else if (d.typeId === 'fitness') goalsFitness++;
-                    else if (d.typeId === 'js') goalsJS++;
+                    if (d.typeId === 'draw') goal1++;
+                    else if (d.typeId === 'social') goal2++;
+                    else if (d.typeId === 'work') goal3++;
                 }
             });
 
             // Render goals indicator
-            document.querySelector('.profile--bar.type--jap span').innerText = goalsJap === 0 ? '' : `+ ${goalsJap}`;
-            document.querySelector('.profile--bar.type--fitness span').innerText = goalsFitness === 0 ? '' : `+ ${goalsFitness}`;
-            document.querySelector('.profile--bar.type--js span').innerText = goalsJS === 0 ? '': `+ ${goalsJS}`;
+            document.querySelector('.profile--bar.type--1 span').innerText = goal1 === 0 ? '' : `+ ${goal1}`;
+            document.querySelector('.profile--bar.type--2 span').innerText = goal2 === 0 ? '' : `+ ${goal2}`;
+            document.querySelector('.profile--bar.type--3 span').innerText = goal3 === 0 ? '': `+ ${goal3}`;
         },
         renderDate: function(weekData) {
             const startDate = new Date(weekData.startDate),
@@ -129,13 +129,13 @@
             habit.$date.innerText = `${startDate.getDate()} ${startDateMonth} - ${endDate.getDate()} ${endDateMonth}`
         },
         renderProgressBars: function(weekData) {
-            let totalJap = 0, totalFitness = 0, totalJS = 0;
+            let total1 = 0, total2 = 0, total3 = 0;
             let hpCount = 10, mpCount = 10;
 
             function countAction(action) {
-                if (action.typeId === 'jap') totalJap++;
-                else if (action.typeId === 'fitness') totalFitness++;
-                else if (action.typeId === 'js') totalJS++;
+                if (action.typeId === 'draw') total1++;
+                else if (action.typeId === 'social') total2++;
+                else if (action.typeId === 'work') total3++;
             }
 
             function countHpMp(action) {
@@ -168,13 +168,13 @@
 
 
             // Render goals progress bar
-            const $progressJap = document.querySelector('.profile--bar.type--jap');
-            const $progressFitness = document.querySelector('.profile--bar.type--fitness');
-            const $progressJS = document.querySelector('.profile--bar.type--js');
+            const $progress1 = document.querySelector('.profile--bar.type--1');
+            const $progress2 = document.querySelector('.profile--bar.type--2');
+            const $progress3 = document.querySelector('.profile--bar.type--3');
 
-            $progressJap.style.width = `${(totalJap)/habit.PROGRESS_CONSTANT}rem`;
-            $progressFitness.style.width = `${(totalFitness)/habit.PROGRESS_CONSTANT}rem`;
-            $progressJS.style.width = `${(totalJS)/habit.PROGRESS_CONSTANT}rem`;
+            $progress1.style.width = `${(total1)/habit.PROGRESS_CONSTANT}rem`;
+            $progress2.style.width = `${(total2)/habit.PROGRESS_CONSTANT}rem`;
+            $progress3.style.width = `${(total3)/habit.PROGRESS_CONSTANT}rem`;
 
             // Render HP and MP bar
             const $hpBar = document.querySelector('.profile--bar.type--hp');
