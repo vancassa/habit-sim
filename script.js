@@ -105,7 +105,7 @@
                         $el.appendChild(createActionEl(d));
                         if (d.typeId === habit.SKILL_1) goal1++;
                         else if (d.typeId === habit.SKILL_2) goal2++;
-                        else if (d.typeId === habit.SKILL_2) goal3++;
+                        else if (d.typeId === habit.SKILL_3) goal3++;
                     });
                 } else {
                     let d = weekData.activities[$el.id];
@@ -113,7 +113,7 @@
                     $el.appendChild(createActionEl(d));
                     if (d.typeId === habit.SKILL_1) goal1++;
                     else if (d.typeId === habit.SKILL_2) goal2++;
-                    else if (d.typeId === habit.SKILL_2) goal3++;
+                    else if (d.typeId === habit.SKILL_3) goal3++;
                 }
             });
 
