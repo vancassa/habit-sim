@@ -42,5 +42,71 @@
         { "typeId": "work", "title": "", "desc": "" }
       ]
     }
+  },
+  {
+    "week": "3",
+    "startDate": "2020-1-13",
+    "endDate": "2020-1-19",
+    "activities": {
+      "monday": { "typeId": "work", "title": "", "desc": "" },
+      "tuesday": { "typeId": "rest", "title": "", "desc": "" },
+      "wednesday": { "typeId": "work", "title": "", "desc": "" },
+      "thursday": { "typeId": "work", "title": "", "desc": "" },
+      "friday": { "typeId": "rest", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "draw", "title": "", "desc": "" },
+        { "typeId": "draw", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
+      ],
+      "sunday": [
+        { "typeId": "work", "title": "", "desc": ""},
+        { "typeId": "work", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
+      ]
+    }
+  },
+  {
+    "week": "4",
+    "startDate": "2020-1-20",
+    "endDate": "2020-1-26",
+    "activities": {
+      "monday": { "typeId": "work", "title": "", "desc": "" },
+      "tuesday": { "typeId": "work", "title": "", "desc": "" },
+      "wednesday": { "typeId": "work", "title": "", "desc": "" },
+      "thursday": { "typeId": "work", "title": "", "desc": "" },
+      "friday": { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+      "saturday": [
+        { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+        { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+        { "typeId": "rest", "title": "Holiday", "desc": "CNY" }
+      ],
+      "sunday": [
+        { "typeId": "rest", "title": "Holiday", "desc": "CNY"},
+        { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+        { "typeId": "rest", "title": "Holiday", "desc": "CNY" }
+      ]
+    }
+  },
+  {
+    "week": "5",
+    "startDate": "2020-1-27",
+    "endDate": "2020-2-2",
+    "activities": {
+      "monday": { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+      "tuesday": { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+      "wednesday": { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
+      "thursday": { "typeId": "work", "title": "", "desc": "" },
+      "friday": { "typeId": "work", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "work", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
+      ],
+      "sunday": [
+        { "typeId": "work", "title": "", "desc": ""},
+        { "typeId": "work", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
+      ]
+    }
   }
 ]

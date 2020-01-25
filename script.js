@@ -1,5 +1,8 @@
 (function() {
     var habit = {
+        SKILL_1: 'draw',
+        SKILL_2: 'social',
+        SKILL_3: 'work',
         PROGRESS_CONSTANT: 10,
         STATS_WIDTH: 0.4,
         $week: document.querySelector(".week"),
@@ -100,17 +103,17 @@
                 if ($el.id === "saturday" || $el.id === "sunday") {
                     weekData.activities[$el.id].forEach(d => {
                         $el.appendChild(createActionEl(d));
-                        if (d.typeId === 'draw') goal1++;
-                        else if (d.typeId === 'social') goal2++;
-                        else if (d.typeId === 'work') goal3++;
+                        if (d.typeId === habit.SKILL_1) goal1++;
+                        else if (d.typeId === habit.SKILL_2) goal2++;
+                        else if (d.typeId === habit.SKILL_2) goal3++;
                     });
                 } else {
                     let d = weekData.activities[$el.id];
                     $el.appendChild(createConstantEl());
                     $el.appendChild(createActionEl(d));
-                    if (d.typeId === 'draw') goal1++;
-                    else if (d.typeId === 'social') goal2++;
-                    else if (d.typeId === 'work') goal3++;
+                    if (d.typeId === habit.SKILL_1) goal1++;
+                    else if (d.typeId === habit.SKILL_2) goal2++;
+                    else if (d.typeId === habit.SKILL_2) goal3++;
                 }
             });
 
@@ -133,9 +136,9 @@
             let hpCount = 10, mpCount = 10;
 
             function countAction(action) {
-                if (action.typeId === 'draw') total1++;
-                else if (action.typeId === 'social') total2++;
-                else if (action.typeId === 'work') total3++;
+                if (action.typeId === habit.SKILL_1) total1++;
+                else if (action.typeId === habit.SKILL_2) total2++;
+                else if (action.typeId === habit.SKILL_3) total3++;
             }
 
             function countHpMp(action) {
