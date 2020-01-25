@@ -28,7 +28,7 @@
     "activities": {
       "monday": { "typeId": "work", "title": "", "desc": "" },
       "tuesday": { "typeId": "work", "title": "", "desc": "" },
-      "wednesday": { "typeId": "social", "title": "", "desc": "" },
+      "wednesday": { "typeId": "work", "title": "", "desc": "" },
       "thursday": { "typeId": "work", "title": "", "desc": "" },
       "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
