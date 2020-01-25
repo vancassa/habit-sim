@@ -27,7 +27,7 @@
     "endDate": "2020-1-12",
     "activities": {
       "monday": { "typeId": "work", "title": "", "desc": "" },
-      "tuesday": { "typeId": "work", "title": "", "desc": "" },
+      "tuesday": { "typeId": "social", "title": "", "desc": "" },
       "wednesday": { "typeId": "work", "title": "", "desc": "" },
       "thursday": { "typeId": "work", "title": "", "desc": "" },
       "friday": { "typeId": "rest", "title": "", "desc": "" },
@@ -51,7 +51,7 @@
       "monday": { "typeId": "work", "title": "", "desc": "" },
       "tuesday": { "typeId": "rest", "title": "", "desc": "" },
       "wednesday": { "typeId": "work", "title": "", "desc": "" },
-      "thursday": { "typeId": "work", "title": "", "desc": "" },
+      "thursday": { "typeId": "social", "title": "", "desc": "" },
       "friday": { "typeId": "rest", "title": "", "desc": "" },
       "saturday": [
         { "typeId": "draw", "title": "", "desc": "" },
@@ -72,8 +72,8 @@
     "activities": {
       "monday": { "typeId": "work", "title": "", "desc": "" },
       "tuesday": { "typeId": "work", "title": "", "desc": "" },
-      "wednesday": { "typeId": "work", "title": "", "desc": "" },
-      "thursday": { "typeId": "work", "title": "", "desc": "" },
+      "wednesday": { "typeId": "social", "title": "", "desc": "" },
+      "thursday": { "typeId": "rest", "title": "", "desc": "" },
       "friday": { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
       "saturday": [
         { "typeId": "rest", "title": "Holiday", "desc": "CNY" },
@@ -100,7 +100,7 @@
       "saturday": [
         { "typeId": "work", "title": "", "desc": "" },
         { "typeId": "work", "title": "", "desc": "" },
-        { "typeId": "work", "title": "", "desc": "" }
+        { "typeId": "social", "title": "", "desc": "" }
       ],
       "sunday": [
         { "typeId": "work", "title": "", "desc": ""},
