@@ -104,8 +104,30 @@
       ],
       "sunday": [
         { "typeId": "work", "title": "", "desc": ""},
-        { "typeId": "work", "title": "", "desc": "" },
-        { "typeId": "work", "title": "", "desc": "" }
+        { "typeId": "rest", "title": "", "desc": "" },
+        { "typeId": "chore", "title": "", "desc": "House chore" }
+      ]
+    }
+  },
+  {
+    "week": "5",
+    "startDate": "2020-1-27",
+    "endDate": "2020-2-2",
+    "activities": {
+      "monday": { "typeId": "rest", "title": "", "desc": "OT" },
+      "tuesday": { "typeId": "work", "title": "", "desc": "OT" },
+      "wednesday": { "typeId": "social", "title": "", "desc": "Motsu nabe dinner" },
+      "thursday": { "typeId": "draw", "title": "", "desc": "Practice" },
+      "friday": { "typeId": "social", "title": "", "desc": "Study" },
+      "saturday": [
+        { "typeId": "draw", "title": "", "desc": "Practice" },
+        { "typeId": "rest", "title": "", "desc": "Birds of Prey" },
+        { "typeId": "social", "title": "", "desc": "Dinner" }
+      ],
+      "sunday": [
+        { "typeId": "draw", "title": "", "desc": ""},
+        { "typeId": "draw", "title": "", "desc": "" },
+        { "typeId": "draw", "title": "", "desc": "" }
       ]
     }
   }
