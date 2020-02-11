@@ -125,6 +125,28 @@
         { "typeId": "social", "title": "", "desc": "Dinner" }
       ],
       "sunday": [
+        { "typeId": "JS", "title": "", "desc": ""},
+        { "typeId": "JS", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
+      ]
+    }
+  },
+  {
+    "week": "7",
+    "startDate": "2020-2-10",
+    "endDate": "2020-2-16",
+    "activities": {
+      "monday": { "typeId": "rest", "title": "", "desc": "rest" },
+      "tuesday": { "typeId": "rest", "title": "", "desc": "rest" },
+      "wednesday": { "typeId": "JS", "title": "", "desc": "Technical test" },
+      "thursday": { "typeId": "draw", "title": "", "desc": "Practice" },
+      "friday": { "typeId": "social", "title": "", "desc": "Study" },
+      "saturday": [
+        { "typeId": "draw", "title": "", "desc": "Practice" },
+        { "typeId": "rest", "title": "", "desc": "Birds of Prey" },
+        { "typeId": "social", "title": "", "desc": "Dinner" }
+      ],
+      "sunday": [
         { "typeId": "draw", "title": "", "desc": ""},
         { "typeId": "draw", "title": "", "desc": "" },
         { "typeId": "draw", "title": "", "desc": "" }
