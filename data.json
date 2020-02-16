@@ -117,8 +117,8 @@
       "monday": { "typeId": "rest", "title": "", "desc": "OT" },
       "tuesday": { "typeId": "work", "title": "", "desc": "OT" },
       "wednesday": { "typeId": "social", "title": "", "desc": "Motsu nabe dinner" },
-      "thursday": { "typeId": "draw", "title": "", "desc": "Practice" },
-      "friday": { "typeId": "social", "title": "", "desc": "Study" },
+      "thursday": { "typeId": "social", "title": "", "desc": "CG" },
+      "friday": { "typeId": "JS", "title": "", "desc": "Study" },
       "saturday": [
         { "typeId": "draw", "title": "", "desc": "Practice" },
         { "typeId": "rest", "title": "", "desc": "Birds of Prey" },
@@ -139,17 +139,39 @@
       "monday": { "typeId": "rest", "title": "", "desc": "rest" },
       "tuesday": { "typeId": "rest", "title": "", "desc": "rest" },
       "wednesday": { "typeId": "JS", "title": "", "desc": "Technical test" },
-      "thursday": { "typeId": "draw", "title": "", "desc": "Practice" },
-      "friday": { "typeId": "social", "title": "", "desc": "Study" },
+      "thursday": { "typeId": "social", "title": "", "desc": "CG" },
+      "friday": { "typeId": "social", "title": "", "desc": "Galentine" },
       "saturday": [
         { "typeId": "draw", "title": "", "desc": "Practice" },
         { "typeId": "rest", "title": "", "desc": "Birds of Prey" },
-        { "typeId": "social", "title": "", "desc": "Dinner" }
+        { "typeId": "social", "title": "", "desc": "Karaoke" }
       ],
       "sunday": [
-        { "typeId": "draw", "title": "", "desc": ""},
+        { "typeId": "rest", "title": "", "desc": ""},
         { "typeId": "draw", "title": "", "desc": "" },
-        { "typeId": "draw", "title": "", "desc": "" }
+        { "typeId": "work", "title": "", "desc": "" }
+      ]
+    }
+  },
+  {
+    "week": "8",
+    "startDate": "2020-2-17",
+    "endDate": "2020-2-23",
+    "activities": {
+      "monday": { "typeId": "draw", "title": "", "desc": "" },
+      "tuesday": { "typeId": "rest", "title": "", "desc": "" },
+      "wednesday": { "typeId": "work", "title": "", "desc": "" },
+      "thursday": { "typeId": "social", "title": "", "desc": "CG" },
+      "friday": { "typeId": "work", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "draw", "title": "", "desc": "Practice" },
+        { "typeId": "rest", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
+      ],
+      "sunday": [
+        { "typeId": "rest", "title": "", "desc": ""},
+        { "typeId": "draw", "title": "", "desc": "" },
+        { "typeId": "work", "title": "", "desc": "" }
       ]
     }
   }
