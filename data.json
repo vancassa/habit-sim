@@ -158,8 +158,8 @@
     "startDate": "2020-2-17",
     "endDate": "2020-2-23",
     "activities": {
-      "monday": { "typeId": "draw", "title": "", "desc": "" },
-      "tuesday": { "typeId": "rest", "title": "", "desc": "" },
+      "monday": { "typeId": "rest", "title": "", "desc": "" },
+      "tuesday": { "typeId": "chore", "title": "", "desc": "House chore" },
       "wednesday": { "typeId": "work", "title": "", "desc": "" },
       "thursday": { "typeId": "social", "title": "", "desc": "CG" },
       "friday": { "typeId": "work", "title": "", "desc": "" },
