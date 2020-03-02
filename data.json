@@ -181,7 +181,7 @@
     "endDate": "2020-3-1",
     "activities": {
       "monday": { "typeId": "chore", "title": "", "desc": "House chore" },
-      "tuesday": { "typeId": "JS", "title": "", "desc": "Study" },
+      "tuesday": { "typeId": "exercise", "title": "", "desc": "Walk" },
       "wednesday": { "typeId": "jap", "title": "", "desc": "Vocab" },
       "thursday": { "typeId": "social", "title": "", "desc": "Team dinner" },
       "friday": { "typeId": "rest", "title": "", "desc": "" },
