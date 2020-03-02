@@ -174,5 +174,27 @@
         { "typeId": "work", "title": "", "desc": "" }
       ]
     }
+  },
+  {
+    "week": "9",
+    "startDate": "2020-2-24",
+    "endDate": "2020-3-1",
+    "activities": {
+      "monday": { "typeId": "chore", "title": "", "desc": "House chore" },
+      "tuesday": { "typeId": "JS", "title": "", "desc": "Study" },
+      "wednesday": { "typeId": "jap", "title": "", "desc": "Vocab" },
+      "thursday": { "typeId": "social", "title": "", "desc": "Team dinner" },
+      "friday": { "typeId": "rest", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "jap", "title": "", "desc": "Vocab" },
+        { "typeId": "social", "title": "", "desc": "Bowling" },
+        { "typeId": "social", "title": "", "desc": "Movies" }
+      ],
+      "sunday": [
+        { "typeId": "social", "title": "", "desc": "Karaoke"},
+        { "typeId": "social", "title": "", "desc": "Hang out" },
+        { "typeId": "rest", "title": "", "desc": "" }
+      ]
+    }
   }
 ]
