@@ -196,5 +196,27 @@
         { "typeId": "rest", "title": "", "desc": "" }
       ]
     }
+  },
+  {
+    "week": "10",
+    "startDate": "2020-1-2",
+    "endDate": "2020-3-8",
+    "activities": {
+      "monday": { "typeId": "work", "title": "", "desc": "" },
+      "tuesday": { "typeId": "exercise", "title": "", "desc": "Climbing" },
+      "wednesday": { "typeId": "rest", "title": "", "desc": "" },
+      "thursday": { "typeId": "social", "title": "", "desc": "CG" },
+      "friday": { "typeId": "rest", "title": "", "desc": "" },
+      "saturday": [
+        { "typeId": "jap", "title": "", "desc": "Vocab" },
+        { "typeId": "chore", "title": "", "desc": "House chore" },
+        { "typeId": "chore", "title": "", "desc": "House chore" }
+      ],
+      "sunday": [
+        { "typeId": "JS", "title": "", "desc": ""},
+        { "typeId": "read", "title": "", "desc": "" },
+        { "typeId": "rest", "title": "", "desc": "" }
+      ]
+    }
   }
 ]
